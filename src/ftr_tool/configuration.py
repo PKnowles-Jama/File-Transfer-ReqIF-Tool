@@ -33,6 +33,11 @@ class ItemTypeConfiguration:
     id: int | None
     name: str
     fields: list[FieldConfiguration] = field(default_factory=list)
+    typeKey: str | None = None
+    display: str | None = None
+    displayPlural: str | None = None
+    associatedItemTypeName: str | None = None
+    associatedItemTypeId: int | None = None
 
 
 @dataclass
@@ -102,6 +107,11 @@ class JamaConfiguration:
                     id=row.get("id"),
                     name=row["name"],
                     fields=[FieldConfiguration(**value) for value in row.get("fields", [])],
+                    typeKey=row.get("typeKey"),
+                    display=row.get("display"),
+                    displayPlural=row.get("displayPlural"),
+                    associatedItemTypeName=row.get("associatedItemTypeName"),
+                    associatedItemTypeId=row.get("associatedItemTypeId"),
                 )
                 for row in raw.get("itemTypes", [])
             ]

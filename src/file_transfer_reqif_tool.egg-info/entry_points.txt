@@ -1,0 +1,2 @@
+[console_scripts]
+ftr-tool = ftr_tool.main:main

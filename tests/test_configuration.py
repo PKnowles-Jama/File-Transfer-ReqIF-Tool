@@ -16,13 +16,29 @@ class ConfigurationTests(unittest.TestCase):
     def test_round_trip(self):
         config = JamaConfiguration(
             source={"projectId": 1, "projectName": "Demo"},
-            itemTypes=[ItemTypeConfiguration(2, "Requirement", [FieldConfiguration("description", fieldType="TEXT")])],
+            itemTypes=[
+                ItemTypeConfiguration(
+                    2,
+                    "Requirement",
+                    [FieldConfiguration("description", fieldType="TEXT")],
+                    typeKey="REQ",
+                    display="Requirement",
+                    displayPlural="Requirements",
+                    associatedItemTypeName="System Requirement",
+                    associatedItemTypeId=45,
+                )
+            ],
             picklists=[], relationshipRules=[],
         )
         config.save(self.path)
         loaded = JamaConfiguration.load(self.path)
         self.assertEqual("Requirement", loaded.itemTypes[0].name)
         self.assertEqual("description", loaded.itemTypes[0].fields[0].name)
+        self.assertEqual("REQ", loaded.itemTypes[0].typeKey)
+        self.assertEqual("Requirement", loaded.itemTypes[0].display)
+        self.assertEqual("Requirements", loaded.itemTypes[0].displayPlural)
+        self.assertEqual("System Requirement", loaded.itemTypes[0].associatedItemTypeName)
+        self.assertEqual(45, loaded.itemTypes[0].associatedItemTypeId)
 
     def test_rejects_unknown_format(self):
         self.path.write_text(json.dumps({"format": "other", "version": 1}), encoding="utf-8")

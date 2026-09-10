@@ -1,0 +1,54 @@
+2026-09-09 20:34:18,215 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/projects
+2026-09-09 20:34:18,617 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/projects
+2026-09-09 20:34:25,210 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:27,497 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:28,658 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:29,664 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:30,832 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:32,454 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:33,846 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:35,157 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:36,358 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:37,633 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:38,929 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:40,580 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:42,207 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:43,384 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:44,702 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:45,873 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-09 20:34:47,111 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/30
+2026-09-09 20:34:47,270 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/31
+2026-09-09 20:34:47,433 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/32
+2026-09-09 20:34:47,543 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/33
+2026-09-09 20:34:47,659 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/35
+2026-09-09 20:34:47,780 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/36
+2026-09-09 20:34:47,917 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/37
+2026-09-09 20:34:48,095 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/149
+2026-09-09 20:34:48,236 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/150
+2026-09-09 20:34:48,358 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/155
+2026-09-09 20:34:48,520 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/158
+2026-09-09 20:34:48,644 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/165
+2026-09-09 20:34:48,788 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/166
+2026-09-09 20:34:48,909 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/168
+2026-09-09 20:34:49,020 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/189
+2026-09-09 20:34:49,166 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/190
+2026-09-09 20:34:49,304 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/191
+2026-09-09 20:34:49,434 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/193
+2026-09-09 20:34:49,574 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists
+2026-09-09 20:34:49,693 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists
+2026-09-09 20:34:49,808 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/267/options
+2026-09-09 20:34:49,984 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/296/options
+2026-09-09 20:34:50,145 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/295/options
+2026-09-09 20:34:50,336 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/266/options
+2026-09-09 20:34:50,533 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/241/options
+2026-09-09 20:34:50,712 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/94/options
+2026-09-09 20:34:50,882 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/289/options
+2026-09-09 20:34:51,036 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/235/options
+2026-09-09 20:34:51,171 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/projects/99/relationshipruleset
+2026-09-09 20:34:51,312 ERROR GET https://kcorey-defense.jamacloud.com/rest/v1/projects/99/relationshipruleset failed (404): This resource does not exist
+2026-09-09 20:34:51,312 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-09 20:34:51,725 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/relationshiprulesets/12/relationships
+2026-09-09 20:34:51,833 ERROR GET https://kcorey-defense.jamacloud.com/rest/v1/relationshiprulesets/12/relationships failed (404): This resource does not exist
+2026-09-09 20:34:51,833 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-09 20:34:51,834 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/users
+2026-09-09 20:34:53,454 INFO Exported configuration to C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\IMS-configuration-20260909-203453.json

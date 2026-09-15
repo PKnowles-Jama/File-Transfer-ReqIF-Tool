@@ -200,24 +200,15 @@ class ConfigurationService:
                         "typeKey": item_type.typeKey,
                         "display": item_type.display,
                         "displayPlural": item_type.displayPlural,
-                        "fields": [
-                            self._field_change_payload(field, desired_picklist_names, target_picklists)
-                            for field in item_type.fields
-                        ],
+                        "fields": [],
                     }
                     changes.append(Change("item_type", f"type:{item_type.name}", f"Create item type ‘{item_type.name}’ with its fields", item_type_payload))
-                    for config_field in item_type.fields:
-                        if self._request_field_type(config_field.fieldType) is not None:
-                            continue
-                        notice_payload = self._field_change_payload(config_field, desired_picklist_names, target_picklists) | {
-                            "itemTypeName": item_type.name,
-                        }
-                        changes.append(Change(
-                            "field_notice",
-                            f"field-notice:{item_type.name}:{config_field.name}",
-                            f"Manual field configuration required for ‘{notice_payload['label']}’ on ‘{item_type.name}’",
-                            notice_payload,
-                        ))
+                    self._append_field_changes_for_new_item_type(
+                        changes=changes,
+                        item_type=item_type,
+                        desired_picklist_names=desired_picklist_names,
+                        target_picklists=target_picklists,
+                    )
                     continue
                 notice_payload = {"itemTypeName": item_type.name, "instanceItemTypeId": instance_match.id}
                 changes.append(Change(
@@ -395,7 +386,16 @@ class ConfigurationService:
                 key = str(change.payload["name"]).casefold()
                 source = item_types_by_name.get(key)
                 if source:
-                    item_types_out[key] = self._copy_item_type(source)
+                    item_types_out[key] = ItemTypeConfiguration(
+                        id=source.id,
+                        name=source.name,
+                        fields=[],
+                        typeKey=source.typeKey,
+                        display=source.display,
+                        displayPlural=source.displayPlural,
+                        associatedItemTypeName=source.associatedItemTypeName,
+                        associatedItemTypeId=source.associatedItemTypeId,
+                    )
             elif change.kind in ("field", "instance_field"):
                 item_type_name = str(change.payload.get("itemTypeName", ""))
                 if not item_type_name:
@@ -1133,6 +1133,33 @@ class ConfigurationService:
                 kind,
                 f"{kind}-mapped:{source_item_type.name}:{target_item_type.name}:{config_field.name}",
                 message,
+                field_payload,
+            ))
+
+    def _append_field_changes_for_new_item_type(
+        self,
+        *,
+        changes: list[Change],
+        item_type: ItemTypeConfiguration,
+        desired_picklist_names: dict[int, str],
+        target_picklists: dict[str, PicklistConfiguration],
+    ) -> None:
+        for config_field in item_type.fields:
+            field_payload = self._field_change_payload(config_field, desired_picklist_names, target_picklists) | {
+                "itemTypeName": item_type.name,
+            }
+            if self._request_field_type(config_field.fieldType) is None:
+                changes.append(Change(
+                    "field_notice",
+                    f"field-notice-new:{item_type.name}:{config_field.name}",
+                    f"Manual field configuration required for ‘{field_payload['label']}’ on ‘{item_type.name}’",
+                    field_payload,
+                ))
+                continue
+            changes.append(Change(
+                "instance_field",
+                f"instance-field-new:{item_type.name}:{config_field.name}",
+                f"Would you like to add '{field_payload['name']}' with '{config_field.fieldType}' to '{item_type.name}' in Project Configuration?",
                 field_payload,
             ))
 

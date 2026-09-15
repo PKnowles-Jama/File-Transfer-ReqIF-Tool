@@ -69,6 +69,25 @@ class _ApplyClientStub:
         return []
 
 
+class _NewItemTypeApplyClientStub:
+    def __init__(self):
+        self.calls = []
+
+    def request(self, path, method="GET", query=None, data=None):
+        self.calls.append((method, path, data))
+        if method == "POST" and path == "itemtypes":
+            return {"meta": {"id": 889}}
+        if method == "POST" and path == "itemtypes/889/fields":
+            return {"id": 778}
+        raise AssertionError(f"Unexpected request: {method} {path}")
+
+    def paged(self, path, query=None):
+        return []
+
+    def paged(self, path, query=None):
+        return []
+
+
 class _TypeKeyCollisionClientStub:
     def __init__(self):
         self.calls = []
@@ -105,7 +124,7 @@ class ConfigurationServiceTests(unittest.TestCase):
             [PicklistConfiguration(20, "Priority", [PicklistOptionConfiguration(21, "High")])],
         )
         changes = self.service.compare(desired, self.config())
-        self.assertEqual(["picklist", "picklist_option", "item_type"], [row.kind for row in changes])
+        self.assertEqual(["picklist", "picklist_option", "item_type", "instance_field"], [row.kind for row in changes])
 
     def test_adds_missing_option_and_field(self):
         desired = self.config(
@@ -134,6 +153,14 @@ class ConfigurationServiceTests(unittest.TestCase):
         desired = self.config([ItemTypeConfiguration(10, "Requirement", [FieldConfiguration("priority", fieldType="STRING")])])
         changes = service.compare(desired, self.config())
         self.assertEqual(["instance_item_type_notice", "instance_field"], [row.kind for row in changes])
+
+    def test_missing_project_item_type_shows_separate_field_prompts_for_new_item_type(self):
+        desired = self.config([ItemTypeConfiguration(10, "System Requirement", [FieldConfiguration("priority", fieldType="STRING")])])
+        changes = self.service.compare(desired, self.config())
+        self.assertEqual(["item_type", "instance_field"], [row.kind for row in changes])
+        self.assertEqual([], changes[0].payload["fields"])
+        self.assertEqual("System Requirement", changes[1].payload["itemTypeName"])
+        self.assertEqual("Would you like to add 'priority' with 'STRING' to 'System Requirement' in Project Configuration?", changes[1].message)
 
     def test_missing_item_type_can_map_to_existing_project_item_type(self):
         desired = self.config([
@@ -205,6 +232,17 @@ class ConfigurationServiceTests(unittest.TestCase):
         self.assertEqual(["Priority"], [row.name for row in exported.picklists])
         self.assertEqual(["High"], [row.name for row in exported.picklists[0].options])
         self.assertEqual([], exported.users)
+
+    def test_apply_new_item_type_creates_type_then_adds_fields_in_same_execution(self):
+        client = _NewItemTypeApplyClientStub()
+        service = ConfigurationService(client=client)  # type: ignore[arg-type]
+        changes = [
+            Change("item_type", "type:System Requirement", "Create item type", {"name": "System Requirement", "typeKey": "SYSREQ", "fields": []}),
+            Change("instance_field", "instance-field-new:System Requirement:priority", "Would you like to add 'priority' with 'STRING' to 'System Requirement' in Project Configuration?", {"name": "priority", "label": "Priority", "fieldType": "STRING", "itemTypeName": "System Requirement"}),
+        ]
+        outcomes = service.apply(102, changes)
+        self.assertEqual(["SUCCESS: Create item type", "SUCCESS: Would you like to add 'priority' with 'STRING' to 'System Requirement' in Project Configuration?"], outcomes)
+        self.assertEqual(["itemtypes", "itemtypes/889/fields"], [row[1] for row in client.calls])
 
     def test_missing_project_picklist_includes_option_changes_for_new_picklist(self):
         desired = self.config(picklists=[PicklistConfiguration(20, "Priority", [PicklistOptionConfiguration(21, "High"), PicklistOptionConfiguration(22, "Medium")])])
@@ -338,8 +376,8 @@ class ConfigurationServiceTests(unittest.TestCase):
             [PicklistConfiguration(241, "Risk Type", [])],
         )
         changes = service.compare(desired, self.config())
-        self.assertEqual(["instance_picklist_notice", "item_type"], [row.kind for row in changes])
-        self.assertEqual(601, changes[1].payload["fields"][0]["targetPicklistId"])
+        self.assertEqual(["instance_picklist_notice", "item_type", "instance_field"], [row.kind for row in changes])
+        self.assertEqual(601, changes[2].payload["targetPicklistId"])
 
     def test_field_payload_uses_picklist_request_key(self):
         payload, reason = self.service._field_payload(

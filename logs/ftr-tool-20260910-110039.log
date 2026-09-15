@@ -1,0 +1,228 @@
+2026-09-10 11:00:56,552 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/projects
+2026-09-10 11:00:56,686 ERROR GET https://kcorey-demo.jamacloud.com/rest/v1/projects failed (401): {"meta":{"status":"Unauthorized","timestamp":"2026-09-10T18:00:56.716+0000","message":""}}
+2026-09-10 11:00:56,777 ERROR Operation failed
+Traceback (most recent call last):
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 143, in _request_url
+    with urlopen(request, timeout=self.timeout, context=self._ssl_context) as response:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\gui.py", line 223, in worker
+    try: self.messages.put(("done", (done, operation())))
+                                           ~~~~~~~~~^^
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\gui.py", line 267, in operation
+    else: client.authenticate_basic(self.first.get(), self.second.get())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 42, in authenticate_basic
+    self.list_projects()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 113, in list_projects
+    data = self.paged("projects")
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 102, in paged
+    envelope = self._request_envelope(path, query=page_query)
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 126, in _request_envelope
+    result = self._request_url(url, headers={"Authorization": self._authorization, "Accept": "application/json"})
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 154, in _request_url
+    raise JamaError(f"Jama returned HTTP {exc.code}: {message}") from exc
+ftr_tool.errors.JamaError: Jama returned HTTP 401: {"meta":{"status":"Unauthorized","timestamp":"2026-09-10T18:00:56.716+0000","message":""}}
+2026-09-10 11:01:08,968 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/projects
+2026-09-10 11:01:09,119 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/projects
+2026-09-10 11:01:28,874 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/projects
+2026-09-10 11:01:29,050 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/projects
+2026-09-10 11:01:35,359 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/abstractitems
+2026-09-10 11:01:36,749 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/28
+2026-09-10 11:01:36,890 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/30
+2026-09-10 11:01:37,039 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/31
+2026-09-10 11:01:37,208 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/45
+2026-09-10 11:01:37,344 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/89
+2026-09-10 11:01:37,517 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/118
+2026-09-10 11:01:37,673 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/itemtypes/121
+2026-09-10 11:01:37,849 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists
+2026-09-10 11:01:37,981 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists
+2026-09-10 11:01:38,120 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/253/options
+2026-09-10 11:01:38,300 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/267/options
+2026-09-10 11:01:38,444 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/228/options
+2026-09-10 11:01:38,597 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/62/options
+2026-09-10 11:01:38,706 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/240/options
+2026-09-10 11:01:38,891 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/63/options
+2026-09-10 11:01:39,088 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/235/options
+2026-09-10 11:01:39,213 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/picklists/225/options
+2026-09-10 11:01:39,329 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/projects/93/relationshipruleset
+2026-09-10 11:01:39,471 ERROR GET https://kcorey-defense.jamacloud.com/rest/v1/projects/93/relationshipruleset failed (404): This resource does not exist
+2026-09-10 11:01:39,471 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-10 11:01:40,031 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/relationshiprulesets/12/relationships
+2026-09-10 11:01:40,170 ERROR GET https://kcorey-defense.jamacloud.com/rest/v1/relationshiprulesets/12/relationships failed (404): This resource does not exist
+2026-09-10 11:01:40,170 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-10 11:01:40,171 INFO GET https://kcorey-defense.jamacloud.com/rest/v1/users
+2026-09-10 11:03:03,777 INFO Exported configuration to C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\CMT2-configuration-20260910-110303.json
+2026-09-10 11:03:30,199 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/projects
+2026-09-10 11:03:30,404 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/projects
+2026-09-10 11:03:35,975 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/abstractitems
+2026-09-10 11:03:37,131 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/abstractitems
+2026-09-10 11:03:38,583 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/abstractitems
+2026-09-10 11:03:38,950 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/30
+2026-09-10 11:03:39,071 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/31
+2026-09-10 11:03:39,221 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/32
+2026-09-10 11:03:39,346 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/132
+2026-09-10 11:03:39,505 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/133
+2026-09-10 11:03:39,654 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/134
+2026-09-10 11:03:39,795 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/136
+2026-09-10 11:03:39,924 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/139
+2026-09-10 11:03:40,092 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists
+2026-09-10 11:03:40,233 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/249/options
+2026-09-10 11:03:40,378 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/270/options
+2026-09-10 11:03:40,538 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/248/options
+2026-09-10 11:03:40,701 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/235/options
+2026-09-10 11:03:40,848 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/projects/47/relationshipruleset
+2026-09-10 11:03:40,968 ERROR GET https://kcorey-demo.jamacloud.com/rest/v1/projects/47/relationshipruleset failed (404): This resource does not exist
+2026-09-10 11:03:40,968 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-10 11:03:41,139 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/relationshiprulesets/1/relationships
+2026-09-10 11:03:41,235 ERROR GET https://kcorey-demo.jamacloud.com/rest/v1/relationshiprulesets/1/relationships failed (404): This resource does not exist
+2026-09-10 11:03:41,236 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-10 11:03:41,236 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/users
+2026-09-10 11:03:43,918 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/abstractitems
+2026-09-10 11:03:44,103 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists
+2026-09-10 11:03:44,254 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/projects/61/relationshipruleset
+2026-09-10 11:03:44,365 ERROR GET https://kcorey-demo.jamacloud.com/rest/v1/projects/61/relationshipruleset failed (404): This resource does not exist
+2026-09-10 11:03:44,365 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-10 11:03:44,592 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/relationshiprulesets/1/relationships
+2026-09-10 11:03:44,682 ERROR GET https://kcorey-demo.jamacloud.com/rest/v1/relationshiprulesets/1/relationships failed (404): This resource does not exist
+2026-09-10 11:03:44,682 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-10 11:03:44,682 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/users
+2026-09-10 11:03:55,358 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes
+2026-09-10 11:03:55,603 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/22
+2026-09-10 11:03:55,767 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/24
+2026-09-10 11:03:55,934 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/26
+2026-09-10 11:03:56,065 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/27
+2026-09-10 11:03:56,227 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/28
+2026-09-10 11:03:56,372 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/30
+2026-09-10 11:03:56,498 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/31
+2026-09-10 11:03:56,613 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/32
+2026-09-10 11:03:56,719 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/33
+2026-09-10 11:03:56,897 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/34
+2026-09-10 11:03:57,037 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/35
+2026-09-10 11:03:57,142 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/36
+2026-09-10 11:03:57,328 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/37
+2026-09-10 11:03:57,453 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/132
+2026-09-10 11:03:57,546 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/133
+2026-09-10 11:03:57,700 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/134
+2026-09-10 11:03:57,868 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/135
+2026-09-10 11:03:58,006 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/136
+2026-09-10 11:03:58,161 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/137
+2026-09-10 11:03:58,361 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/138
+2026-09-10 11:03:58,479 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/139
+2026-09-10 11:03:58,629 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/140
+2026-09-10 11:03:58,767 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/141
+2026-09-10 11:03:58,938 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/142
+2026-09-10 11:03:59,076 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/152
+2026-09-10 11:03:59,238 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/153
+2026-09-10 11:03:59,375 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/154
+2026-09-10 11:03:59,508 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/155
+2026-09-10 11:03:59,626 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/156
+2026-09-10 11:04:25,481 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists
+2026-09-10 11:04:25,649 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/251/options
+2026-09-10 11:04:25,848 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/249/options
+2026-09-10 11:04:25,971 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/270/options
+2026-09-10 11:04:26,099 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/271/options
+2026-09-10 11:04:26,231 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/226/options
+2026-09-10 11:04:26,352 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/228/options
+2026-09-10 11:04:26,459 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/266/options
+2026-09-10 11:04:26,594 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/252/options
+2026-09-10 11:04:26,740 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/272/options
+2026-09-10 11:04:26,842 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/273/options
+2026-09-10 11:04:26,961 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/268/options
+2026-09-10 11:04:27,149 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/62/options
+2026-09-10 11:04:27,328 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/33/options
+2026-09-10 11:04:27,475 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/31/options
+2026-09-10 11:04:27,581 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/34/options
+2026-09-10 11:04:27,736 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/248/options
+2026-09-10 11:04:27,881 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/250/options
+2026-09-10 11:04:28,046 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/258/options
+2026-09-10 11:04:28,231 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/253/options
+2026-09-10 11:04:28,372 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/259/options
+2026-09-10 11:04:28,523 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/260/options
+2026-09-10 11:04:28,677 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/63/options
+2026-09-10 11:04:28,840 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/261/options
+2026-09-10 11:04:29,028 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/255/options
+2026-09-10 11:04:29,139 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/254/options
+2026-09-10 11:04:29,312 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/274/options
+2026-09-10 11:04:29,461 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/121/options
+2026-09-10 11:04:29,595 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/235/options
+2026-09-10 11:04:29,765 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/picklists/225/options
+2026-09-10 11:07:22,088 INFO GET https://kcorey-demo.jamacloud.com/rest/v1/itemtypes
+2026-09-10 11:07:22,427 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists
+2026-09-10 11:07:22,937 INFO Applied: Create picklist ‘CR Status’
+2026-09-10 11:07:22,937 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists
+2026-09-10 11:07:23,261 INFO Applied: Create picklist ‘Requirement Type’
+2026-09-10 11:07:23,261 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/275/options
+2026-09-10 11:07:23,556 INFO Applied: Add option ‘Open’ to ‘CR Status’
+2026-09-10 11:07:23,556 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/275/options
+2026-09-10 11:07:24,052 INFO Applied: Add option ‘In Analysis’ to ‘CR Status’
+2026-09-10 11:07:24,052 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/275/options
+2026-09-10 11:07:24,774 INFO Applied: Add option ‘Accepted’ to ‘CR Status’
+2026-09-10 11:07:24,775 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/275/options
+2026-09-10 11:07:25,056 INFO Applied: Add option ‘Completed’ to ‘CR Status’
+2026-09-10 11:07:25,056 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/275/options
+2026-09-10 11:07:25,311 INFO Applied: Add option ‘Rejected’ to ‘CR Status’
+2026-09-10 11:07:25,311 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/275/options
+2026-09-10 11:07:25,623 INFO Applied: Add option ‘Deferred’ to ‘CR Status’
+2026-09-10 11:07:25,623 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:25,972 INFO Applied: Add option ‘Functional’ to ‘Requirement Type’
+2026-09-10 11:07:25,973 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:26,248 INFO Applied: Add option ‘Performance’ to ‘Requirement Type’
+2026-09-10 11:07:26,248 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:26,502 INFO Applied: Add option ‘Interface’ to ‘Requirement Type’
+2026-09-10 11:07:26,502 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:26,778 INFO Applied: Add option ‘Environmental’ to ‘Requirement Type’
+2026-09-10 11:07:26,778 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:27,063 INFO Applied: Add option ‘Safety’ to ‘Requirement Type’
+2026-09-10 11:07:27,063 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:27,384 INFO Applied: Add option ‘Human Interface’ to ‘Requirement Type’
+2026-09-10 11:07:27,384 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:27,662 INFO Applied: Add option ‘Standard’ to ‘Requirement Type’
+2026-09-10 11:07:27,662 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:28,036 INFO Applied: Add option ‘Reliabilty’ to ‘Requirement Type’
+2026-09-10 11:07:28,036 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:28,361 INFO Applied: Add option ‘Sustainability’ to ‘Requirement Type’
+2026-09-10 11:07:28,361 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:28,675 INFO Applied: Add option ‘Producibility’ to ‘Requirement Type’
+2026-09-10 11:07:28,675 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/picklists/276/options
+2026-09-10 11:07:28,944 INFO Applied: Add option ‘Security’ to ‘Requirement Type’
+2026-09-10 11:07:28,944 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/28/fields
+2026-09-10 11:07:29,214 INFO Applied: Would you like to add 'reason_for_change' with 'TEXT' to 'Change Request' in Project Configuration?
+2026-09-10 11:07:29,214 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/132/fields
+2026-09-10 11:07:29,481 INFO Applied: Would you like to add 'status' with 'LOOKUP' to 'Stakeholder Requirement' in Project Configuration?
+2026-09-10 11:07:29,481 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/133/fields
+2026-09-10 11:07:29,794 INFO Applied: Would you like to add 'requirement_type' with 'LOOKUP' to 'System Requirement' in Project Configuration? (mapped from 'System Requirement ')
+2026-09-10 11:07:29,794 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/133/fields
+2026-09-10 11:07:30,111 INFO Applied: Would you like to add 'rationale' with 'TEXT' to 'System Requirement' in Project Configuration? (mapped from 'System Requirement ')
+2026-09-10 11:07:30,111 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/133/fields
+2026-09-10 11:07:30,430 INFO Applied: Would you like to add 'derived' with 'LOOKUP' to 'System Requirement' in Project Configuration? (mapped from 'System Requirement ')
+2026-09-10 11:07:30,431 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/134/fields
+2026-09-10 11:07:30,760 INFO Applied: Would you like to add 'requirement_type' with 'LOOKUP' to 'Subsystem Requirement' in Project Configuration?
+2026-09-10 11:07:30,760 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/134/fields
+2026-09-10 11:07:31,043 INFO Applied: Would you like to add 'rationale' with 'TEXT' to 'Subsystem Requirement' in Project Configuration?
+2026-09-10 11:07:31,043 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/134/fields
+2026-09-10 11:07:31,332 INFO Applied: Would you like to add 'owner' with 'STRING' to 'Subsystem Requirement' in Project Configuration?
+2026-09-10 11:07:31,332 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/134/fields
+2026-09-10 11:07:31,668 INFO Applied: Would you like to add 'hw_or_sw' with 'LOOKUP' to 'Subsystem Requirement' in Project Configuration?
+2026-09-10 11:07:31,668 INFO POST https://kcorey-demo.jamacloud.com/rest/v1/itemtypes/134/fields
+2026-09-10 11:07:31,913 INFO Applied: Would you like to add 'derived' with 'LOOKUP' to 'Subsystem Requirement' in Project Configuration?

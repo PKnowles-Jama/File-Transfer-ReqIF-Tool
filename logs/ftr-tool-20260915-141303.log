@@ -1,0 +1,477 @@
+2026-09-15 14:13:28,041 INFO POST https://kcorey-training.jamacloud.com/rest/oauth/token
+2026-09-15 14:13:28,208 ERROR POST https://kcorey-training.jamacloud.com/rest/oauth/token failed (401): {"error":"invalid_client"}
+2026-09-15 14:13:28,250 ERROR Operation failed
+Traceback (most recent call last):
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 143, in _request_url
+    with urlopen(request, timeout=self.timeout, context=self._ssl_context) as response:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\gui.py", line 223, in worker
+    try: self.messages.put(("done", (done, operation())))
+                                           ~~~~~~~~~^^
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\gui.py", line 266, in operation
+    if self.auth_type.get() == "OAuth": client.authenticate_oauth(self.first.get(), self.second.get())
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 49, in authenticate_oauth
+    payload = self._request_url(
+        f"{self.base_url}/rest/oauth/token",
+    ...<5 lines>...
+        },
+    )
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 154, in _request_url
+    raise JamaError(f"Jama returned HTTP {exc.code}: {message}") from exc
+ftr_tool.errors.JamaError: Jama returned HTTP 401: {"error":"invalid_client"}
+2026-09-15 14:15:04,646 INFO POST https://kcorey-demo.jamacloud.com/rest/oauth/token
+2026-09-15 14:15:04,783 ERROR POST https://kcorey-demo.jamacloud.com/rest/oauth/token failed (401): {"error":"invalid_client"}
+2026-09-15 14:15:04,868 ERROR Operation failed
+Traceback (most recent call last):
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 143, in _request_url
+    with urlopen(request, timeout=self.timeout, context=self._ssl_context) as response:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\KaylaCorey\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\gui.py", line 223, in worker
+    try: self.messages.put(("done", (done, operation())))
+                                           ~~~~~~~~~^^
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\gui.py", line 266, in operation
+    if self.auth_type.get() == "OAuth": client.authenticate_oauth(self.first.get(), self.second.get())
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 49, in authenticate_oauth
+    payload = self._request_url(
+        f"{self.base_url}/rest/oauth/token",
+    ...<5 lines>...
+        },
+    )
+  File "C:\Users\KaylaCorey\IdeaProjects\File-Transfer-ReqIF-Tool\src\ftr_tool\client.py", line 154, in _request_url
+    raise JamaError(f"Jama returned HTTP {exc.code}: {message}") from exc
+ftr_tool.errors.JamaError: Jama returned HTTP 401: {"error":"invalid_client"}
+2026-09-15 14:15:22,641 INFO GET https://kcorey-training.jamacloud.com/rest/v1/projects
+2026-09-15 14:15:22,867 INFO GET https://kcorey-training.jamacloud.com/rest/v1/projects
+2026-09-15 14:16:46,549 INFO GET https://kcorey-training.jamacloud.com/rest/v1/abstractitems
+2026-09-15 14:16:48,106 INFO GET https://kcorey-training.jamacloud.com/rest/v1/abstractitems
+2026-09-15 14:16:49,255 INFO GET https://kcorey-training.jamacloud.com/rest/v1/abstractitems
+2026-09-15 14:16:50,566 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/22
+2026-09-15 14:16:50,688 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/30
+2026-09-15 14:16:50,883 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/31
+2026-09-15 14:16:51,055 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/32
+2026-09-15 14:16:51,184 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/33
+2026-09-15 14:16:51,368 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/35
+2026-09-15 14:16:51,540 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/36
+2026-09-15 14:16:51,818 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/37
+2026-09-15 14:16:52,022 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/132
+2026-09-15 14:16:52,183 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/133
+2026-09-15 14:16:52,379 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/136
+2026-09-15 14:16:52,636 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/137
+2026-09-15 14:16:52,769 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists
+2026-09-15 14:16:52,952 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/254/options
+2026-09-15 14:16:53,186 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/253/options
+2026-09-15 14:16:53,361 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/251/options
+2026-09-15 14:16:53,566 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/250/options
+2026-09-15 14:16:53,697 INFO GET https://kcorey-training.jamacloud.com/rest/v1/projects/65/relationshipruleset
+2026-09-15 14:16:53,847 ERROR GET https://kcorey-training.jamacloud.com/rest/v1/projects/65/relationshipruleset failed (404): This resource does not exist
+2026-09-15 14:16:53,848 INFO GET https://kcorey-training.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-15 14:16:54,241 INFO GET https://kcorey-training.jamacloud.com/rest/v1/relationshiprulesets/1/relationships
+2026-09-15 14:16:54,385 ERROR GET https://kcorey-training.jamacloud.com/rest/v1/relationshiprulesets/1/relationships failed (404): This resource does not exist
+2026-09-15 14:16:54,385 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-15 14:16:54,386 INFO GET https://kcorey-training.jamacloud.com/rest/v1/users
+2026-09-15 14:16:54,693 INFO GET https://kcorey-training.jamacloud.com/rest/v1/users
+2026-09-15 14:17:02,027 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:02,329 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/22
+2026-09-15 14:17:02,545 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/24
+2026-09-15 14:17:02,811 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/26
+2026-09-15 14:17:03,016 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/27
+2026-09-15 14:17:03,221 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/28
+2026-09-15 14:17:03,430 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/30
+2026-09-15 14:17:03,592 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/31
+2026-09-15 14:17:03,763 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/32
+2026-09-15 14:17:03,909 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/33
+2026-09-15 14:17:04,089 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/34
+2026-09-15 14:17:04,286 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/35
+2026-09-15 14:17:04,452 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/36
+2026-09-15 14:17:04,592 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/37
+2026-09-15 14:17:04,724 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/132
+2026-09-15 14:17:04,875 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/133
+2026-09-15 14:17:05,048 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/134
+2026-09-15 14:17:05,193 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/135
+2026-09-15 14:17:05,342 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/136
+2026-09-15 14:17:05,498 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/137
+2026-09-15 14:17:05,642 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/138
+2026-09-15 14:17:05,787 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/139
+2026-09-15 14:17:05,935 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/140
+2026-09-15 14:17:06,138 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/141
+2026-09-15 14:17:06,260 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/142
+2026-09-15 14:17:06,418 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/143
+2026-09-15 14:17:06,604 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes/144
+2026-09-15 14:17:15,828 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists
+2026-09-15 14:17:15,964 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/260/options
+2026-09-15 14:17:16,170 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/259/options
+2026-09-15 14:17:16,328 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/252/options
+2026-09-15 14:17:16,493 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/254/options
+2026-09-15 14:17:16,638 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/226/options
+2026-09-15 14:17:16,796 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/228/options
+2026-09-15 14:17:16,965 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/253/options
+2026-09-15 14:17:17,115 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/255/options
+2026-09-15 14:17:17,248 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/62/options
+2026-09-15 14:17:17,420 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/33/options
+2026-09-15 14:17:17,587 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/31/options
+2026-09-15 14:17:17,735 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/34/options
+2026-09-15 14:17:17,871 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/248/options
+2026-09-15 14:17:18,030 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/262/options
+2026-09-15 14:17:18,194 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/251/options
+2026-09-15 14:17:18,333 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/250/options
+2026-09-15 14:17:18,470 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/63/options
+2026-09-15 14:17:18,635 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/257/options
+2026-09-15 14:17:18,791 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/121/options
+2026-09-15 14:17:18,968 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/263/options
+2026-09-15 14:17:19,141 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/258/options
+2026-09-15 14:17:19,303 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/235/options
+2026-09-15 14:17:19,485 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/249/options
+2026-09-15 14:17:19,628 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/256/options
+2026-09-15 14:17:19,801 INFO GET https://kcorey-training.jamacloud.com/rest/v1/picklists/225/options
+2026-09-15 14:17:22,921 INFO GET https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:23,149 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists
+2026-09-15 14:17:23,403 INFO Applied: Create picklist ‘MS Compliance Status’
+2026-09-15 14:17:23,403 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists
+2026-09-15 14:17:23,703 INFO Applied: Create picklist ‘MS Rqmt State’
+2026-09-15 14:17:23,703 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists
+2026-09-15 14:17:23,998 INFO Applied: Create picklist ‘Risk Type’
+2026-09-15 14:17:23,998 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists
+2026-09-15 14:17:24,315 INFO Applied: Create picklist ‘Story State’
+2026-09-15 14:17:24,315 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists
+2026-09-15 14:17:24,583 INFO Applied: Create picklist ‘Team’
+2026-09-15 14:17:24,583 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/264/options
+2026-09-15 14:17:24,900 INFO Applied: Add option ‘Unassigned’ to ‘MS Compliance Status’
+2026-09-15 14:17:24,900 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/264/options
+2026-09-15 14:17:25,190 INFO Applied: Add option ‘Compliant’ to ‘MS Compliance Status’
+2026-09-15 14:17:25,190 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/264/options
+2026-09-15 14:17:25,446 INFO Applied: Add option ‘Partially Compliant’ to ‘MS Compliance Status’
+2026-09-15 14:17:25,446 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/264/options
+2026-09-15 14:17:25,726 INFO Applied: Add option ‘Non-Compliant’ to ‘MS Compliance Status’
+2026-09-15 14:17:25,726 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/264/options
+2026-09-15 14:17:26,037 INFO Applied: Add option ‘Waived’ to ‘MS Compliance Status’
+2026-09-15 14:17:26,037 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/264/options
+2026-09-15 14:17:26,320 INFO Applied: Add option ‘Deviation Approved’ to ‘MS Compliance Status’
+2026-09-15 14:17:26,320 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/265/options
+2026-09-15 14:17:26,627 INFO Applied: Add option ‘Draft’ to ‘MS Rqmt State’
+2026-09-15 14:17:26,627 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/265/options
+2026-09-15 14:17:26,889 INFO Applied: Add option ‘In Work’ to ‘MS Rqmt State’
+2026-09-15 14:17:26,889 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/265/options
+2026-09-15 14:17:27,146 INFO Applied: Add option ‘Approved’ to ‘MS Rqmt State’
+2026-09-15 14:17:27,146 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/265/options
+2026-09-15 14:17:27,609 INFO Applied: Add option ‘Verified’ to ‘MS Rqmt State’
+2026-09-15 14:17:27,609 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/266/options
+2026-09-15 14:17:28,358 INFO Applied: Add option ‘Technical’ to ‘Risk Type’
+2026-09-15 14:17:28,358 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/266/options
+2026-09-15 14:17:28,694 INFO Applied: Add option ‘Cost’ to ‘Risk Type’
+2026-09-15 14:17:28,694 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/266/options
+2026-09-15 14:17:29,046 INFO Applied: Add option ‘Schedule’ to ‘Risk Type’
+2026-09-15 14:17:29,046 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/266/options
+2026-09-15 14:17:29,343 INFO Applied: Add option ‘Programmatic’ to ‘Risk Type’
+2026-09-15 14:17:29,344 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/267/options
+2026-09-15 14:17:29,614 INFO Applied: Add option ‘Draft’ to ‘Story State’
+2026-09-15 14:17:29,614 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/267/options
+2026-09-15 14:17:29,935 INFO Applied: Add option ‘Review’ to ‘Story State’
+2026-09-15 14:17:29,935 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/267/options
+2026-09-15 14:17:30,269 INFO Applied: Add option ‘Build’ to ‘Story State’
+2026-09-15 14:17:30,269 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/267/options
+2026-09-15 14:17:30,529 INFO Applied: Add option ‘Completed’ to ‘Story State’
+2026-09-15 14:17:30,529 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/267/options
+2026-09-15 14:17:30,825 INFO Applied: Add option ‘Deferred’ to ‘Story State’
+2026-09-15 14:17:30,825 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:31,094 INFO Applied: Add option ‘Unassigned’ to ‘Team’
+2026-09-15 14:17:31,094 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:31,376 INFO Applied: Add option ‘Navigation’ to ‘Team’
+2026-09-15 14:17:31,376 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:31,662 INFO Applied: Add option ‘Guidance’ to ‘Team’
+2026-09-15 14:17:31,662 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:31,953 INFO Applied: Add option ‘Embedded Software’ to ‘Team’
+2026-09-15 14:17:31,953 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:32,229 INFO Applied: Add option ‘Firmware’ to ‘Team’
+2026-09-15 14:17:32,229 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:32,570 INFO Applied: Add option ‘Flight Sciences’ to ‘Team’
+2026-09-15 14:17:32,570 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:32,854 INFO Applied: Add option ‘Avionics’ to ‘Team’
+2026-09-15 14:17:32,855 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:33,153 INFO Applied: Add option ‘Systems Engineering’ to ‘Team’
+2026-09-15 14:17:33,154 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:33,428 INFO Applied: Add option ‘Mechanical’ to ‘Team’
+2026-09-15 14:17:33,429 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:33,759 INFO Applied: Add option ‘Systems Test’ to ‘Team’
+2026-09-15 14:17:33,759 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:34,064 INFO Applied: Add option ‘Propulsion’ to ‘Team’
+2026-09-15 14:17:34,064 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:34,451 INFO Applied: Add option ‘Program Management’ to ‘Team’
+2026-09-15 14:17:34,452 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/268/options
+2026-09-15 14:17:34,735 INFO Applied: Add option ‘Support Equipment/Logistics’ to ‘Team’
+2026-09-15 14:17:34,735 INFO POST https://kcorey-training.jamacloud.com/rest/v1/picklists/235/options
+2026-09-15 14:17:35,069 INFO Applied: Would you like to add 'N/A' to 'Verification/Validation Method' in Project Configuration?
+2026-09-15 14:17:35,069 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:35,774 INFO Applied: Create item type ‘MS L0 Requirement’ with its fields
+2026-09-15 14:17:35,774 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:36,325 INFO Applied: Create item type ‘MS Weapon System Requirement’ with its fields
+2026-09-15 14:17:36,325 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:37,014 INFO Applied: Create item type ‘MS Technical Performance Measure’ with its fields
+2026-09-15 14:17:37,014 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:37,534 INFO Applied: Create item type ‘MS System Requirement’ with its fields
+2026-09-15 14:17:37,534 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:38,048 INFO Applied: Create item type ‘MS Risk’ with its fields
+2026-09-15 14:17:38,048 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:38,869 INFO Applied: Create item type ‘MS Verification’ with its fields
+2026-09-15 14:17:38,869 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:39,494 INFO Applied: Create item type ‘MS Defect’ with its fields
+2026-09-15 14:17:39,494 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:39,983 INFO Applied: Create item type ‘MS Subsystem Requirement’ with its fields
+2026-09-15 14:17:39,983 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:40,570 INFO Applied: Create item type ‘MS User Story’ with its fields
+2026-09-15 14:17:40,571 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:41,172 INFO Applied: Create item type ‘MS Change Request’ with its fields
+2026-09-15 14:17:41,172 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes
+2026-09-15 14:17:41,698 INFO Applied: Create item type ‘MS Architecture’ with its fields
+2026-09-15 14:17:41,698 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields
+2026-09-15 14:17:41,874 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:41,874 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS L0 Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:41,874 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields
+2026-09-15 14:17:42,035 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:42,035 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS L0 Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:42,035 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields
+2026-09-15 14:17:42,197 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:42,197 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS L0 Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:42,198 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields
+2026-09-15 14:17:42,343 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/145/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:42,343 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS L0 Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:42,343 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:42,488 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:42,488 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Weapon System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:42,489 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:42,630 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:42,631 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Weapon System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:42,631 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:42,749 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:42,749 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Weapon System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:42,749 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:42,892 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:42,892 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Weapon System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:42,892 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:43,178 INFO Applied: Would you like to add 'verification_method' with 'LOOKUP' to 'MS Weapon System Requirement' in Project Configuration?
+2026-09-15 14:17:43,178 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:43,452 INFO Applied: Would you like to add 'requirement_state' with 'LOOKUP' to 'MS Weapon System Requirement' in Project Configuration?
+2026-09-15 14:17:43,452 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:43,762 INFO Applied: Would you like to add 'perf_team' with 'LOOKUP' to 'MS Weapon System Requirement' in Project Configuration?
+2026-09-15 14:17:43,762 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/146/fields
+2026-09-15 14:17:44,007 INFO Applied: Would you like to add 'compliance_status' with 'LOOKUP' to 'MS Weapon System Requirement' in Project Configuration?
+2026-09-15 14:17:44,007 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:44,873 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:44,873 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Technical Performance Measure' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:44,873 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:45,088 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:45,088 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Technical Performance Measure' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:45,088 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:45,253 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:45,253 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Technical Performance Measure' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:45,253 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:45,419 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:45,419 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Technical Performance Measure' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:45,420 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:45,799 INFO Applied: Would you like to add 'design_value' with 'STRING' to 'MS Technical Performance Measure' in Project Configuration?
+2026-09-15 14:17:45,800 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:46,131 INFO Applied: Would you like to add 'objective_value' with 'STRING' to 'MS Technical Performance Measure' in Project Configuration?
+2026-09-15 14:17:46,132 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:46,419 INFO Applied: Would you like to add 'threshold_value' with 'STRING' to 'MS Technical Performance Measure' in Project Configuration?
+2026-09-15 14:17:46,419 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/147/fields
+2026-09-15 14:17:46,759 INFO Applied: Would you like to add 'compliance_status' with 'LOOKUP' to 'MS Technical Performance Measure' in Project Configuration?
+2026-09-15 14:17:46,759 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:46,931 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:46,931 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:46,931 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:47,089 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:47,089 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:47,090 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:47,235 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:47,235 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:47,235 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:47,373 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:47,373 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS System Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:47,373 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:47,674 INFO Applied: Would you like to add 'primary_verification_method' with 'LOOKUP' to 'MS System Requirement' in Project Configuration?
+2026-09-15 14:17:47,675 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:48,046 INFO Applied: Would you like to add 'secondary_verification_method' with 'LOOKUP' to 'MS System Requirement' in Project Configuration?
+2026-09-15 14:17:48,046 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:48,442 INFO Applied: Would you like to add 'requirement_state' with 'LOOKUP' to 'MS System Requirement' in Project Configuration?
+2026-09-15 14:17:48,442 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/148/fields
+2026-09-15 14:17:48,751 INFO Applied: Would you like to add 'compliance_status' with 'LOOKUP' to 'MS System Requirement' in Project Configuration?
+2026-09-15 14:17:48,751 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields
+2026-09-15 14:17:48,894 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:48,894 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Risk' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:48,894 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields
+2026-09-15 14:17:49,047 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:49,047 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Risk' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:49,047 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields
+2026-09-15 14:17:49,182 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:49,183 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Risk' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:49,183 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields
+2026-09-15 14:17:49,351 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:49,352 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Risk' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:49,352 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields
+2026-09-15 14:17:49,524 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:49,524 WARNING Skipped: Would you like to add 'assignedTo' with 'STRING' to 'MS Risk' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:49,525 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields
+2026-09-15 14:17:50,404 INFO Applied: Would you like to add 'risk_type' with 'LOOKUP' to 'MS Risk' in Project Configuration?
+2026-09-15 14:17:50,405 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/149/fields
+2026-09-15 14:17:50,808 INFO Applied: Would you like to add 'performance_team' with 'LOOKUP' to 'MS Risk' in Project Configuration?
+2026-09-15 14:17:50,808 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-15 14:17:50,957 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:50,958 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Verification' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:50,958 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-15 14:17:51,127 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:51,127 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Verification' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:51,127 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-15 14:17:51,328 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:51,328 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Verification' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:51,328 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-15 14:17:51,470 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:51,470 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Verification' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:51,471 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-15 14:17:51,802 INFO Applied: Would you like to add 'verification_method' with 'LOOKUP' to 'MS Verification' in Project Configuration?
+2026-09-15 14:17:51,803 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-15 14:17:51,955 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:51,955 WARNING Skipped: Would you like to add 'release' with 'RELEASE' to 'MS Verification' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:51,955 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-15 14:17:52,114 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/150/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:52,114 WARNING Skipped: Would you like to add 'assignedTo' with 'STRING' to 'MS Verification' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:52,114 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-15 14:17:52,334 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:52,334 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Defect' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:52,334 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-15 14:17:52,515 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:52,515 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Defect' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:52,515 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-15 14:17:52,659 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:52,659 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Defect' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:52,659 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-15 14:17:52,800 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:52,800 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Defect' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:52,800 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-15 14:17:53,112 INFO Applied: Would you like to add 'team' with 'LOOKUP' to 'MS Defect' in Project Configuration?
+2026-09-15 14:17:53,113 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-15 14:17:53,282 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/151/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:53,283 WARNING Skipped: Would you like to add 'assignedTo' with 'STRING' to 'MS Defect' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:53,283 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:53,427 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:53,427 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Subsystem Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:53,427 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:53,591 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:53,591 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Subsystem Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:53,591 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:53,787 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:53,788 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Subsystem Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:53,788 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:53,949 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:53,950 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Subsystem Requirement' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:53,950 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:54,267 INFO Applied: Would you like to add 'primary_verification_method' with 'LOOKUP' to 'MS Subsystem Requirement' in Project Configuration?
+2026-09-15 14:17:54,267 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:54,669 INFO Applied: Would you like to add 'secondary_verification_method' with 'LOOKUP' to 'MS Subsystem Requirement' in Project Configuration?
+2026-09-15 14:17:54,670 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:55,016 INFO Applied: Would you like to add 'requirement_state' with 'LOOKUP' to 'MS Subsystem Requirement' in Project Configuration?
+2026-09-15 14:17:55,016 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-15 14:17:55,313 INFO Applied: Would you like to add 'compliane_status' with 'LOOKUP' to 'MS Subsystem Requirement' in Project Configuration?
+2026-09-15 14:17:55,313 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:55,465 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:55,465 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS User Story' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:55,465 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:55,617 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:55,618 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS User Story' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:55,618 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:55,803 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:55,803 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS User Story' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:55,803 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:55,925 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:55,925 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS User Story' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:55,925 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:56,232 INFO Applied: Would you like to add 'acceptance_criteria' with 'TEXT' to 'MS User Story' in Project Configuration?
+2026-09-15 14:17:56,232 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:56,552 INFO Applied: Would you like to add 'story_points' with 'INTEGER' to 'MS User Story' in Project Configuration?
+2026-09-15 14:17:56,553 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:56,902 INFO Applied: Would you like to add 'jira_url' with 'URL_STRING' to 'MS User Story' in Project Configuration?
+2026-09-15 14:17:56,902 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:57,232 INFO Applied: Would you like to add 'performance_team' with 'LOOKUP' to 'MS User Story' in Project Configuration?
+2026-09-15 14:17:57,232 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:57,408 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:57,408 WARNING Skipped: Would you like to add 'assignedTo' with 'STRING' to 'MS User Story' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:57,408 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-15 14:17:57,719 INFO Applied: Would you like to add 'status' with 'LOOKUP' to 'MS User Story' in Project Configuration?
+2026-09-15 14:17:57,719 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields
+2026-09-15 14:17:57,863 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:57,863 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Change Request' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:57,863 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields
+2026-09-15 14:17:58,017 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:58,017 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Change Request' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:58,017 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields
+2026-09-15 14:17:58,188 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:58,188 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Change Request' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:58,188 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields
+2026-09-15 14:17:58,339 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:58,339 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Change Request' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:58,339 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields
+2026-09-15 14:17:58,508 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:58,508 WARNING Skipped: Would you like to add 'assignedTo' with 'STRING' to 'MS Change Request' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:58,508 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields
+2026-09-15 14:17:58,822 INFO Applied: Would you like to add 'performance_team' with 'LOOKUP' to 'MS Change Request' in Project Configuration?
+2026-09-15 14:17:58,823 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields
+2026-09-15 14:17:59,009 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/154/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:59,009 WARNING Skipped: Would you like to add 'release' with 'RELEASE' to 'MS Change Request' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:59,009 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields
+2026-09-15 14:17:59,160 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:59,160 WARNING Skipped: Would you like to add 'documentKey' with 'STRING' to 'MS Architecture' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:59,160 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields
+2026-09-15 14:17:59,337 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:59,337 WARNING Skipped: Would you like to add 'globalId' with 'STRING' to 'MS Architecture' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:59,338 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields
+2026-09-15 14:17:59,474 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:59,475 WARNING Skipped: Would you like to add 'name' with 'STRING' to 'MS Architecture' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:59,475 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields
+2026-09-15 14:17:59,637 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:59,637 WARNING Skipped: Would you like to add 'description' with 'TEXT' to 'MS Architecture' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:59,638 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields
+2026-09-15 14:17:59,753 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:59,753 WARNING Skipped: Would you like to add 'assignedTo' with 'STRING' to 'MS Architecture' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)
+2026-09-15 14:17:59,754 INFO POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields
+2026-09-15 14:17:59,876 ERROR POST https://kcorey-training.jamacloud.com/rest/v1/itemtypes/155/fields failed (400): Field name must be unique for this type.
+2026-09-15 14:17:59,877 WARNING Skipped: Would you like to add 'release' with 'RELEASE' to 'MS Architecture' in Project Configuration? (Jama returned HTTP 400: Field name must be unique for this type.)

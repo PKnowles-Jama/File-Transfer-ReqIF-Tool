@@ -40,7 +40,7 @@ Field comparison uses field type plus normalized field-name matching and picklis
 
 Field-name uniqueness is enforced conservatively during compare/import: if the target item type already uses the sanitized Jama field name for a non-equivalent field, the tool now reports a manual-review notice instead of auto-posting a duplicate field create request.
 
-When an imported item type does not exist in the target project or instance, the compare flow now prompts you to optionally map it to an existing target item type. If mapped, the tool treats that mapped type as the comparison target for missing fields. You can still predefine this in JSON with `associatedItemTypeName` or `associatedItemTypeId` on the `itemTypes[]` entry.
+When an imported item type does not exist in the target project or instance, the compare flow now prompts you to optionally map it to an existing target item type. If mapped, the tool treats that mapped type as the comparison target for missing fields. If not mapped, the new item type is created first and each of its fields is shown as a separate Yes/No prompt so the item type and its fields can be completed in the same run. You can still predefine a mapping in JSON with `associatedItemTypeName` or `associatedItemTypeId` on the `itemTypes[]` entry.
 
 For best results after upgrading the tool, regenerate source configuration exports before importing them elsewhere so the JSON includes preserved item type key/display metadata used when creating new item types.
 

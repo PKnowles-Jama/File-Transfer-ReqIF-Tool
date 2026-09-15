@@ -1,0 +1,300 @@
+2026-09-11 09:02:40,637 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/projects
+2026-09-11 09:02:40,862 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/projects
+2026-09-11 09:04:39,394 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/abstractitems
+2026-09-11 09:04:39,600 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:04:39,722 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/projects/49/relationshipruleset
+2026-09-11 09:04:39,870 ERROR GET https://kcorey-airborne.jamacloud.com/rest/v1/projects/49/relationshipruleset failed (404): This resource does not exist
+2026-09-11 09:04:39,874 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-11 09:04:40,128 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets/1/relationships
+2026-09-11 09:04:40,259 ERROR GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets/1/relationships failed (404): This resource does not exist
+2026-09-11 09:04:40,259 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-11 09:04:40,259 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/users
+2026-09-11 09:07:45,562 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:07:45,762 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/22
+2026-09-11 09:07:45,903 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/30
+2026-09-11 09:07:45,995 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/31
+2026-09-11 09:07:46,099 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/32
+2026-09-11 09:07:46,246 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/33
+2026-09-11 09:07:46,371 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/34
+2026-09-11 09:07:46,526 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/35
+2026-09-11 09:07:46,647 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/36
+2026-09-11 09:07:46,749 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/37
+2026-09-11 09:07:46,863 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/132
+2026-09-11 09:07:46,987 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/133
+2026-09-11 09:07:47,144 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/134
+2026-09-11 09:07:47,289 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/135
+2026-09-11 09:07:47,405 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/136
+2026-09-11 09:07:47,551 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/137
+2026-09-11 09:07:47,695 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/138
+2026-09-11 09:07:47,845 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/139
+2026-09-11 09:07:47,988 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/141
+2026-09-11 09:07:48,138 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/142
+2026-09-11 09:07:48,279 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/144
+2026-09-11 09:07:48,414 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/145
+2026-09-11 09:07:48,560 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/146
+2026-09-11 09:07:48,662 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/147
+2026-09-11 09:07:48,775 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/148
+2026-09-11 09:07:48,924 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/149
+2026-09-11 09:07:49,053 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/150
+2026-09-11 09:07:49,219 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/151
+2026-09-11 09:07:49,350 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/152
+2026-09-11 09:07:49,450 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/153
+2026-09-11 09:07:49,588 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/154
+2026-09-11 09:07:49,725 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/155
+2026-09-11 09:07:49,864 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/156
+2026-09-11 09:07:49,998 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/157
+2026-09-11 09:07:50,166 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/158
+2026-09-11 09:08:56,656 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:08:56,789 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/260/options
+2026-09-11 09:08:56,937 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/265/options
+2026-09-11 09:08:57,055 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/257/options
+2026-09-11 09:08:57,175 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/272/options
+2026-09-11 09:08:57,307 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/252/options
+2026-09-11 09:08:57,462 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/266/options
+2026-09-11 09:08:57,571 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/250/options
+2026-09-11 09:08:57,684 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/264/options
+2026-09-11 09:08:57,795 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/33/options
+2026-09-11 09:08:57,937 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/31/options
+2026-09-11 09:08:58,048 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/34/options
+2026-09-11 09:08:58,177 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/268/options
+2026-09-11 09:08:58,301 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/269/options
+2026-09-11 09:08:58,446 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/270/options
+2026-09-11 09:08:58,572 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/249/options
+2026-09-11 09:08:58,686 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/267/options
+2026-09-11 09:08:58,790 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/271/options
+2026-09-11 09:08:58,923 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/253/options
+2026-09-11 09:08:59,059 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/251/options
+2026-09-11 09:08:59,187 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/258/options
+2026-09-11 09:08:59,297 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/248/options
+2026-09-11 09:21:05,544 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:05,759 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:06,126 INFO Applied: Create picklist ‘Document Status’
+2026-09-11 09:21:06,127 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:06,369 INFO Applied: Create picklist ‘MS Compliance Status’
+2026-09-11 09:21:06,369 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:06,604 INFO Applied: Create picklist ‘MS Rqmt State’
+2026-09-11 09:21:06,604 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:06,874 INFO Applied: Create picklist ‘Object type’
+2026-09-11 09:21:06,874 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:07,142 INFO Applied: Create picklist ‘Risk Type’
+2026-09-11 09:21:07,143 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:07,440 INFO Applied: Create picklist ‘Story State’
+2026-09-11 09:21:07,441 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:07,743 INFO Applied: Create picklist ‘Team’
+2026-09-11 09:21:07,743 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:21:07,959 INFO Applied: Create picklist ‘Verification/Validation Method’
+2026-09-11 09:21:07,960 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/273/options
+2026-09-11 09:21:08,202 INFO Applied: Add option ‘Draft’ to ‘Document Status’
+2026-09-11 09:21:08,202 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/273/options
+2026-09-11 09:21:08,498 INFO Applied: Add option ‘Review’ to ‘Document Status’
+2026-09-11 09:21:08,498 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/273/options
+2026-09-11 09:21:08,773 INFO Applied: Add option ‘Approved’ to ‘Document Status’
+2026-09-11 09:21:08,773 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/274/options
+2026-09-11 09:21:09,082 INFO Applied: Add option ‘Compliant’ to ‘MS Compliance Status’
+2026-09-11 09:21:09,082 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/274/options
+2026-09-11 09:21:09,328 INFO Applied: Add option ‘Partially Compliant’ to ‘MS Compliance Status’
+2026-09-11 09:21:09,329 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/274/options
+2026-09-11 09:21:09,586 INFO Applied: Add option ‘Non-Compliant’ to ‘MS Compliance Status’
+2026-09-11 09:21:09,586 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/274/options
+2026-09-11 09:21:09,830 INFO Applied: Add option ‘Waived’ to ‘MS Compliance Status’
+2026-09-11 09:21:09,830 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/274/options
+2026-09-11 09:21:10,134 INFO Applied: Add option ‘Deviation Approved’ to ‘MS Compliance Status’
+2026-09-11 09:21:10,135 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/275/options
+2026-09-11 09:21:10,432 INFO Applied: Add option ‘Draft’ to ‘MS Rqmt State’
+2026-09-11 09:21:10,433 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/275/options
+2026-09-11 09:21:10,699 INFO Applied: Add option ‘In Work’ to ‘MS Rqmt State’
+2026-09-11 09:21:10,699 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/275/options
+2026-09-11 09:21:10,989 INFO Applied: Add option ‘Approved’ to ‘MS Rqmt State’
+2026-09-11 09:21:10,990 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/275/options
+2026-09-11 09:21:11,296 INFO Applied: Add option ‘Verified’ to ‘MS Rqmt State’
+2026-09-11 09:21:11,296 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/276/options
+2026-09-11 09:21:11,605 INFO Applied: Add option ‘Information’ to ‘Object type’
+2026-09-11 09:21:11,605 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/276/options
+2026-09-11 09:21:11,884 INFO Applied: Add option ‘Figure’ to ‘Object type’
+2026-09-11 09:21:11,885 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/276/options
+2026-09-11 09:21:12,196 INFO Applied: Add option ‘Table’ to ‘Object type’
+2026-09-11 09:21:12,196 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/276/options
+2026-09-11 09:21:12,432 INFO Applied: Add option ‘Equation’ to ‘Object type’
+2026-09-11 09:21:12,433 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/277/options
+2026-09-11 09:21:12,698 INFO Applied: Add option ‘Technical’ to ‘Risk Type’
+2026-09-11 09:21:12,698 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/277/options
+2026-09-11 09:21:12,984 INFO Applied: Add option ‘Cost’ to ‘Risk Type’
+2026-09-11 09:21:12,984 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/277/options
+2026-09-11 09:21:13,287 INFO Applied: Add option ‘Schedule’ to ‘Risk Type’
+2026-09-11 09:21:13,288 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/277/options
+2026-09-11 09:21:13,676 INFO Applied: Add option ‘Programmatic’ to ‘Risk Type’
+2026-09-11 09:21:13,676 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/278/options
+2026-09-11 09:21:14,205 INFO Applied: Add option ‘Draft’ to ‘Story State’
+2026-09-11 09:21:14,205 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/278/options
+2026-09-11 09:21:14,472 INFO Applied: Add option ‘Review’ to ‘Story State’
+2026-09-11 09:21:14,473 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/278/options
+2026-09-11 09:21:14,734 INFO Applied: Add option ‘Build’ to ‘Story State’
+2026-09-11 09:21:14,734 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/278/options
+2026-09-11 09:21:14,973 INFO Applied: Add option ‘Completed’ to ‘Story State’
+2026-09-11 09:21:14,973 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/278/options
+2026-09-11 09:21:15,214 INFO Applied: Add option ‘Deferred’ to ‘Story State’
+2026-09-11 09:21:15,214 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:15,570 INFO Applied: Add option ‘Unassigned’ to ‘Team’
+2026-09-11 09:21:15,570 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:15,865 INFO Applied: Add option ‘Navigation’ to ‘Team’
+2026-09-11 09:21:15,865 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:16,126 INFO Applied: Add option ‘Guidance’ to ‘Team’
+2026-09-11 09:21:16,126 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:16,387 INFO Applied: Add option ‘Embedded Software’ to ‘Team’
+2026-09-11 09:21:16,387 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:16,629 INFO Applied: Add option ‘Firmware’ to ‘Team’
+2026-09-11 09:21:16,629 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:16,868 INFO Applied: Add option ‘Flight Sciences’ to ‘Team’
+2026-09-11 09:21:16,868 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:17,108 INFO Applied: Add option ‘Avionics’ to ‘Team’
+2026-09-11 09:21:17,108 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:17,341 INFO Applied: Add option ‘Systems Engineering’ to ‘Team’
+2026-09-11 09:21:17,342 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:17,594 INFO Applied: Add option ‘Mechanical’ to ‘Team’
+2026-09-11 09:21:17,595 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:17,875 INFO Applied: Add option ‘Systems Test’ to ‘Team’
+2026-09-11 09:21:17,875 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:18,155 INFO Applied: Add option ‘Propulsion’ to ‘Team’
+2026-09-11 09:21:18,156 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:18,463 INFO Applied: Add option ‘Program Management’ to ‘Team’
+2026-09-11 09:21:18,463 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:21:18,773 INFO Applied: Add option ‘Support Equipment/Logistics’ to ‘Team’
+2026-09-11 09:21:18,773 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/280/options
+2026-09-11 09:21:19,067 INFO Applied: Add option ‘Test’ to ‘Verification/Validation Method’
+2026-09-11 09:21:19,067 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/280/options
+2026-09-11 09:21:19,375 INFO Applied: Add option ‘Demonstration’ to ‘Verification/Validation Method’
+2026-09-11 09:21:19,375 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/280/options
+2026-09-11 09:21:19,620 INFO Applied: Add option ‘Inspection’ to ‘Verification/Validation Method’
+2026-09-11 09:21:19,620 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/280/options
+2026-09-11 09:21:19,965 INFO Applied: Add option ‘Analysis’ to ‘Verification/Validation Method’
+2026-09-11 09:21:19,966 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/picklists/280/options
+2026-09-11 09:21:20,222 INFO Applied: Add option ‘N/A’ to ‘Verification/Validation Method’
+2026-09-11 09:21:20,223 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:20,860 INFO Applied: Create item type ‘MS L0 Requirement’ with its fields
+2026-09-11 09:21:20,861 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:21,330 INFO Applied: Create item type ‘MS Weapon System Requirement’ with its fields
+2026-09-11 09:21:21,330 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:21,813 INFO Applied: Create item type ‘MS Technical Performance Measure’ with its fields
+2026-09-11 09:21:21,813 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:22,400 INFO Applied: Create item type ‘MS Risk’ with its fields
+2026-09-11 09:21:22,401 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:22,907 INFO Applied: Create item type ‘MS Defect’ with its fields
+2026-09-11 09:21:22,908 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:23,537 INFO Applied: Create item type ‘MS Subsystem Requirement’ with its fields
+2026-09-11 09:21:23,537 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:24,172 INFO Applied: Create item type ‘MS User Story’ with its fields
+2026-09-11 09:21:24,172 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:25,399 INFO Applied: Create item type ‘MS Change Request’ with its fields
+2026-09-11 09:21:25,399 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:21:25,938 INFO Applied: Create item type ‘MS Architecture’ with its fields
+2026-09-11 09:21:25,938 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/33/fields
+2026-09-11 09:21:26,297 INFO Applied: Would you like to add 'object_type' with 'LOOKUP' to 'Text' in Project Configuration?
+2026-09-11 09:21:26,298 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/133/fields
+2026-09-11 09:21:26,590 INFO Applied: Would you like to add 'primary_verification_method' with 'LOOKUP' to 'System Requirement' in Project Configuration? (mapped from 'MS System Requirement')
+2026-09-11 09:21:26,591 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/133/fields
+2026-09-11 09:21:26,905 INFO Applied: Would you like to add 'secondary_verification_method' with 'LOOKUP' to 'System Requirement' in Project Configuration? (mapped from 'MS System Requirement')
+2026-09-11 09:21:26,905 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/133/fields
+2026-09-11 09:21:27,219 INFO Applied: Would you like to add 'requirement_state' with 'LOOKUP' to 'System Requirement' in Project Configuration? (mapped from 'MS System Requirement')
+2026-09-11 09:21:27,220 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/133/fields
+2026-09-11 09:21:27,477 INFO Applied: Would you like to add 'compliance_status' with 'LOOKUP' to 'System Requirement' in Project Configuration? (mapped from 'MS System Requirement')
+2026-09-11 09:21:27,478 INFO POST https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/136/fields
+2026-09-11 09:21:27,737 INFO Applied: Would you like to add 'release' with 'RELEASE' to 'Verification' in Project Configuration? (mapped from 'MS Verification')
+2026-09-11 09:22:14,189 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/abstractitems
+2026-09-11 09:22:14,392 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:22:14,519 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/projects/49/relationshipruleset
+2026-09-11 09:22:14,621 ERROR GET https://kcorey-airborne.jamacloud.com/rest/v1/projects/49/relationshipruleset failed (404): This resource does not exist
+2026-09-11 09:22:14,622 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-11 09:22:14,920 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets/1/relationships
+2026-09-11 09:22:15,052 ERROR GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets/1/relationships failed (404): This resource does not exist
+2026-09-11 09:22:15,052 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-11 09:22:15,052 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/users
+2026-09-11 09:22:55,544 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/projects
+2026-09-11 09:22:55,736 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/projects
+2026-09-11 09:23:07,703 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/abstractitems
+2026-09-11 09:23:08,761 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/30
+2026-09-11 09:23:08,888 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/31
+2026-09-11 09:23:08,993 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/32
+2026-09-11 09:23:09,125 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/33
+2026-09-11 09:23:09,254 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:23:09,347 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/276/options
+2026-09-11 09:23:09,458 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/projects/38/relationshipruleset
+2026-09-11 09:23:09,555 ERROR GET https://kcorey-airborne.jamacloud.com/rest/v1/projects/38/relationshipruleset failed (404): This resource does not exist
+2026-09-11 09:23:09,555 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-11 09:23:09,824 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets/1/relationships
+2026-09-11 09:23:09,904 ERROR GET https://kcorey-airborne.jamacloud.com/rest/v1/relationshiprulesets/1/relationships failed (404): This resource does not exist
+2026-09-11 09:23:09,904 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-11 09:23:09,904 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/users
+2026-09-11 09:23:15,046 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes
+2026-09-11 09:23:15,272 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/22
+2026-09-11 09:23:15,411 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/30
+2026-09-11 09:23:15,532 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/31
+2026-09-11 09:23:15,634 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/32
+2026-09-11 09:23:15,752 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/33
+2026-09-11 09:23:15,899 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/34
+2026-09-11 09:23:16,023 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/35
+2026-09-11 09:23:16,123 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/36
+2026-09-11 09:23:16,262 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/37
+2026-09-11 09:23:16,370 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/132
+2026-09-11 09:23:16,495 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/133
+2026-09-11 09:23:16,633 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/134
+2026-09-11 09:23:16,801 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/135
+2026-09-11 09:23:16,941 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/136
+2026-09-11 09:23:17,083 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/137
+2026-09-11 09:23:17,186 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/138
+2026-09-11 09:23:17,312 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/139
+2026-09-11 09:23:17,418 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/141
+2026-09-11 09:23:17,547 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/142
+2026-09-11 09:23:17,669 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/144
+2026-09-11 09:23:17,777 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/145
+2026-09-11 09:23:17,899 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/146
+2026-09-11 09:23:18,046 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/147
+2026-09-11 09:23:18,150 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/148
+2026-09-11 09:23:18,254 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/149
+2026-09-11 09:23:18,393 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/150
+2026-09-11 09:23:18,542 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/151
+2026-09-11 09:23:18,655 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/152
+2026-09-11 09:23:18,789 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/153
+2026-09-11 09:23:18,905 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/154
+2026-09-11 09:23:19,013 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/155
+2026-09-11 09:23:19,139 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/156
+2026-09-11 09:23:19,279 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/157
+2026-09-11 09:23:19,402 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/158
+2026-09-11 09:23:19,502 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/159
+2026-09-11 09:23:19,672 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/160
+2026-09-11 09:23:19,807 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/161
+2026-09-11 09:23:19,905 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/162
+2026-09-11 09:23:20,003 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/163
+2026-09-11 09:23:20,153 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/164
+2026-09-11 09:23:20,250 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/165
+2026-09-11 09:23:20,393 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/166
+2026-09-11 09:23:20,494 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/itemtypes/167
+2026-09-11 09:23:33,858 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists
+2026-09-11 09:23:33,970 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/260/options
+2026-09-11 09:23:34,083 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/265/options
+2026-09-11 09:23:34,199 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/257/options
+2026-09-11 09:23:34,366 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/272/options
+2026-09-11 09:23:34,532 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/273/options
+2026-09-11 09:23:34,707 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/252/options
+2026-09-11 09:23:34,813 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/266/options
+2026-09-11 09:23:34,937 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/274/options
+2026-09-11 09:23:35,066 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/275/options
+2026-09-11 09:23:35,192 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/276/options
+2026-09-11 09:23:35,310 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/250/options
+2026-09-11 09:23:35,425 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/264/options
+2026-09-11 09:23:35,541 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/33/options
+2026-09-11 09:23:35,673 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/31/options
+2026-09-11 09:23:35,832 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/34/options
+2026-09-11 09:23:35,970 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/268/options
+2026-09-11 09:23:36,080 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/277/options
+2026-09-11 09:23:36,229 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/269/options
+2026-09-11 09:23:36,324 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/270/options
+2026-09-11 09:23:36,445 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/249/options
+2026-09-11 09:23:36,618 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/267/options
+2026-09-11 09:23:36,798 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/271/options
+2026-09-11 09:23:36,943 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/253/options
+2026-09-11 09:23:37,053 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/251/options
+2026-09-11 09:23:37,171 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/278/options
+2026-09-11 09:23:37,341 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/279/options
+2026-09-11 09:23:37,465 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/280/options
+2026-09-11 09:23:37,596 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/258/options
+2026-09-11 09:23:37,729 INFO GET https://kcorey-airborne.jamacloud.com/rest/v1/picklists/248/options

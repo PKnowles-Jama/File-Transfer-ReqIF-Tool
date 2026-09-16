@@ -23,24 +23,32 @@ Credentials are held in memory only and are never written to the configuration f
 
 1. Enter the Jama base URL, choose Basic or OAuth, enter credentials, and select **Authenticate**.
    - After authentication, the URL is locked. Use **Update URL** to unlock it, then **Submit URL** to confirm the new value before re-authenticating.
-2. Select a project.
-3. Select **Load project configuration**.
-4. Choose either:
-   - **Export configuration** to save a portable JSON file in the current directory, or
-   - **Choose import file**, review the proposed changes, select the desired changes, and choose **Apply selected changes**.
-   - **Export selected (Yes) changes** to save an updated configuration file that keeps only changes currently marked **Yes**.
+2. Choose either:
+   - **Open Export GUI** to select a project, fetch its latest administrative configuration, and save a portable JSON file in the current directory, or
+   - **Open Import GUI** to choose a JSON configuration file and work through staged Picklist and Item Type updates for Jama Connect instance changes.
+
+The main window no longer contains the project dropdown or a separate **Load project configuration** step. Project selection now happens in the **Export GUI**. The **Import GUI** is now presented as an instance-oriented workflow and no longer shows target-project details in its header or follow-up summary.
 
 The **Relevant info** section in the GUI shows live context while you work, including the authenticated Jama Connect URL, auth mode, selected project (key and ID), loaded target configuration counts, import filename and metadata, and selected actionable-change totals with notice counts.
 
 When **Update URL** is selected or the authentication mode is changed, the tool clears credential entries, project selection, and previously listed configuration changes so stale values are not reused.
 
-When a picklist in the import file is not present in the current project, compare now checks whether the picklist exists in the wider Jama Connect instance and shows guidance and option-add prompts accordingly.
+When a picklist in the import file is not present in the current project, compare now checks whether the picklist exists in the wider Jama Connect instance and shows guidance and option-add prompts accordingly. In the staged Import GUI, exact existing Jama picklist names are matched automatically and shown first in a highlighted overview section so you can review missing options for those picklists without seeing the same mapping toggle/dropdown controls.
 
 Field comparison uses field type plus normalized field-name matching and picklist-name equivalence (instead of relying on picklist IDs that differ between instances).
 
 Field-name uniqueness is enforced conservatively during compare/import: if the target item type already uses the sanitized Jama field name for a non-equivalent field, the tool now reports a manual-review notice instead of auto-posting a duplicate field create request.
 
-When an imported item type does not exist in the target project or instance, the compare flow now prompts you to optionally map it to an existing target item type. If mapped, the tool treats that mapped type as the comparison target for missing fields. If not mapped, the new item type is created first and each of its fields is shown as a separate Yes/No prompt so the item type and its fields can be completed in the same run. You can still predefine a mapping in JSON with `associatedItemTypeName` or `associatedItemTypeId` on the `itemTypes[]` entry.
+When an imported item type already exists in the target project or the wider Jama Connect instance, the staged Import GUI now shows that exact Jama match in a highlighted overview section and only considers missing fields to add. When an imported item type does not exist in the target project or instance, the compare flow still prompts you to optionally map it to an existing target item type. If mapped, the tool treats that mapped type as the comparison target for missing fields. If not mapped, the new item type is created first and each of its fields is shown as a separate Yes/No prompt so the item type and its fields can be completed in the same run. Fields that Jama already creates automatically for the new item type are skipped during apply, preventing duplicate-name errors. You can still predefine a mapping in JSON with `associatedItemTypeName` or `associatedItemTypeId` on the `itemTypes[]` entry.
+
+All GUIs now include vertical scrolling support where longer content needs to be reviewed. In the staged Import GUI, the Picklist step includes bulk **Select All** / **Deselect All** controls for currently displayed option changes. The Item Type step includes **Select All Item Types** and **Deselect All Item Types**, allowing you to turn every Item Type mapping on or off at once, along with **Skip** actions that let you move forward without applying that entire stage.
+
+The import confirmation dialogs are now limited to the actual changes that will be applied. Informational notices and warning-only items are not included in those final authorization popups.
+
+At the end of the staged Import GUI workflow, the tool generates a separate **Project Configuration Updates** text file in the current working directory. That follow-up file includes:
+
+1. Item Types that now need to be added to the Jama project configuration, including API IDs when available.
+2. Item Types that were skipped during import and therefore require manual warning/review.
 
 For best results after upgrading the tool, regenerate source configuration exports before importing them elsewhere so the JSON includes preserved item type key/display metadata used when creating new item types.
 

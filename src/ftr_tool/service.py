@@ -5,7 +5,7 @@ import re
 from dataclasses import asdict, dataclass
 from typing import Any, Callable, Protocol
 
-from .client import JamaClient, Project
+from .client import Project
 from .configuration import (
     FieldConfiguration,
     ItemTypeConfiguration,
@@ -31,6 +31,25 @@ SUPPORTED_REQUEST_FIELD_TYPES = {
     "DATE",
     "URL_STRING",
     "INTEGER",
+}
+
+AUTO_CREATED_NEW_ITEM_TYPE_FIELD_NAMES = {
+    "assigned",
+    "description",
+    "document_key",
+    "documentkey",
+    "global_id",
+    "globalid",
+    "name",
+}
+
+AUTO_CREATED_NEW_ITEM_TYPE_FIELD_LABELS = {
+    "assigned",
+    "description",
+    "document key",
+    "global id",
+    "name",
+    "project id",
 }
 
 
@@ -81,6 +100,10 @@ class ConfigurationService:
         self.logger = logger or logging.getLogger("ftr_tool")
         self._instance_item_types_cache: dict[str, ItemTypeConfiguration] | None = None
         self._instance_picklists_cache: dict[str, PicklistConfiguration] | None = None
+
+    def invalidate_instance_metadata_cache(self) -> None:
+        self._instance_item_types_cache = None
+        self._instance_picklists_cache = None
 
     def export_project(self, project: Project, status: StatusCallback = lambda _: None) -> JamaConfiguration:
         status("Retrieving item types and fields…")
@@ -136,7 +159,7 @@ class ConfigurationService:
                 changes.append(Change(
                     "instance_picklist_notice",
                     f"instance-picklist:{picklist.name}",
-                    f"The existing {picklist.name} needs to be added to the Jama Connect Project.",
+                    f"The existing Jama Connect picklist '{picklist.name}' is already available in the instance.",
                     {"picklistName": picklist.name, "instancePicklistId": instance_match.id},
                 ))
                 existing_instance_options = {row.name.casefold() for row in instance_match.options}
@@ -146,7 +169,7 @@ class ConfigurationService:
                         changes.append(Change(
                             "instance_picklist_option",
                             f"instance-option:{picklist.name}:{option.name}",
-                            f"Would you like to add '{option.name}' to '{picklist.name}' in Project Configuration?",
+                            f"Add option '{option.name}' to existing Jama Connect picklist '{picklist.name}'",
                             payload,
                         ))
                 continue
@@ -179,7 +202,7 @@ class ConfigurationService:
                         changes.append(Change(
                             "instance_item_type_notice",
                             f"instance-type-associated:{item_type.name}:{associated_target.name}",
-                            f"The associated item type {associated_target.name} for {item_type.name} needs to be added to the Jama Connect Project.",
+                            f"The associated item type {associated_target.name} for {item_type.name} is already available in the Jama Connect instance.",
                             notice_payload,
                         ))
                     self._append_field_changes_for_mapped_item_type(
@@ -214,7 +237,7 @@ class ConfigurationService:
                 changes.append(Change(
                     "instance_item_type_notice",
                     f"instance-type:{item_type.name}",
-                    f"The existing {item_type.name} needs to be added to the Jama Connect Project.",
+                    f"The existing Jama Connect item type '{item_type.name}' is already available in the instance.",
                     notice_payload,
                 ))
                 for config_field in item_type.fields:
@@ -255,7 +278,7 @@ class ConfigurationService:
                     changes.append(Change(
                         "instance_field",
                         f"instance-field:{item_type.name}:{config_field.name}",
-                        f"Would you like to add '{field_payload['name']}' with '{config_field.fieldType}' to '{item_type.name}' in Project Configuration?",
+                        f"Add field '{field_payload['name']}' with '{config_field.fieldType}' to existing Jama Connect item type '{item_type.name}'",
                         field_payload,
                     ))
                 continue
@@ -334,6 +357,18 @@ class ConfigurationService:
                 result[item_type.name] = options
         return result
 
+    def copy_configuration(self, value: JamaConfiguration) -> JamaConfiguration:
+        return JamaConfiguration(
+            source=dict(value.source),
+            itemTypes=[self._copy_item_type(row) for row in value.itemTypes],
+            picklists=[self._copy_picklist(row) for row in value.picklists],
+            relationshipRules=[RelationshipRuleConfiguration(**asdict(row)) for row in value.relationshipRules],
+            users=[self._copy_user(row) for row in value.users],
+            format=value.format,
+            version=value.version,
+            exportedAt=value.exportedAt,
+        )
+
     @staticmethod
     def apply_item_type_association(
         item_type: ItemTypeConfiguration,
@@ -345,6 +380,25 @@ class ConfigurationService:
             return
         item_type.associatedItemTypeId = associated_item_type.id
         item_type.associatedItemTypeName = associated_item_type.name
+
+    def apply_picklist_mapping(
+        self,
+        configuration: JamaConfiguration,
+        source_picklist_name: str,
+        target_picklist_name: str | None,
+    ) -> None:
+        source = next((row for row in configuration.picklists if row.name.casefold() == source_picklist_name.casefold()), None)
+        if source is None or not target_picklist_name:
+            return
+        old_name = source.name
+        source.name = target_picklist_name
+        for item_type in configuration.itemTypes:
+            for field in item_type.fields:
+                if field.picklistName and field.picklistName.casefold() == old_name.casefold():
+                    field.picklistName = target_picklist_name
+                    continue
+                if source.id is not None and _int_or_none(field.picklist) == source.id:
+                    field.picklistName = target_picklist_name
 
     def export_selected_configuration(self, desired: JamaConfiguration, selected: list[Change]) -> JamaConfiguration:
         filtered = [
@@ -455,6 +509,7 @@ class ConfigurationService:
         outcomes: list[str] = []
         created_picklists: dict[str, int] = {}
         created_types: dict[str, int] = {}
+        created_type_fields: dict[int, list[FieldConfiguration]] = {}
         existing_type_keys = self._existing_item_type_keys()
         ordered = {
             "picklist": 0,
@@ -494,6 +549,7 @@ class ConfigurationService:
                     if item_type_id is None:
                         raise JamaError(f"Could not resolve created item type ID for '{change.payload['name']}'.")
                     created_types[change.payload["name"].casefold()] = int(item_type_id)
+                    created_type_fields[int(item_type_id)] = self._get_item_type_fields(int(item_type_id))
                     existing_type_keys.add(used_type_key.casefold())
                 elif change.kind in ("field", "instance_field"):
                     target = change.payload.get("targetItemTypeId") or created_types.get(change.payload["itemTypeName"].casefold())
@@ -504,7 +560,31 @@ class ConfigurationService:
                         outcomes.append("NOTICE: " + (reason or change.message))
                         self.logger.warning("Skipped: %s (%s)", change.message, reason)
                         continue
+                    created_fields = created_type_fields.get(int(target))
+                    if created_fields is not None and self._find_conflicting_field(created_fields, request_payload["name"]):
+                        outcomes.append("NOTICE: " + change.message)
+                        self.logger.warning(
+                            "Skipped: %s (the newly created item type already has a field named '%s').",
+                            change.message,
+                            request_payload["name"],
+                        )
+                        continue
                     self._create_field(int(target), request_payload, created_picklists, request_ready=True)
+                    if created_fields is not None:
+                        created_fields.append(FieldConfiguration(
+                            name=str(request_payload["name"]),
+                            label=str(request_payload.get("label") or request_payload["name"]),
+                            fieldType=str(request_payload.get("fieldType", "STRING")),
+                            readOnly=bool(request_payload.get("readOnly", False)),
+                            readOnlyAllowApiOverwrite=bool(request_payload.get("readOnlyAllowApiOverwrite", False)),
+                            required=bool(request_payload.get("required", False)),
+                            triggerSuspect=bool(request_payload.get("triggerSuspect", False)),
+                            synchronize=bool(request_payload.get("synchronize", False)),
+                            picklist=_int_or_none(request_payload.get("pickList")),
+                            picklistName=change.payload.get("picklistName"),
+                            textType=request_payload.get("textType"),
+                            infotip=request_payload.get("infotip"),
+                        ))
                 elif change.kind == "user":
                     self._create_user(change.payload)
                 else:
@@ -910,6 +990,19 @@ class ConfigurationService:
             return None
         return None
 
+    def _get_item_type_fields(self, item_type_id: int) -> list[FieldConfiguration]:
+        if self.client is None:
+            return []
+        try:
+            detail = self.client.request(f"itemtypes/{item_type_id}")
+        except JamaError as exc:
+            self.logger.warning("Created item type fields unavailable: %s", exc)
+            return []
+        raw_fields = detail.get("fields", [])
+        if isinstance(raw_fields, dict):
+            raw_fields = raw_fields.get("fields", [])
+        return [self._parse_field(value) for value in raw_fields if isinstance(value, dict) and value.get("name")]
+
     @staticmethod
     def _resolve_created_id(result: Any) -> int | None:
         if isinstance(result, dict):
@@ -1126,7 +1219,7 @@ class ConfigurationService:
                 ))
                 continue
             if kind == "instance_field":
-                message = f"Would you like to add '{field_payload['name']}' with '{config_field.fieldType}' to '{target_item_type.name}' in Project Configuration?{mapped_message}"
+                message = f"Add field '{field_payload['name']}' with '{config_field.fieldType}' to existing Jama Connect item type '{target_item_type.name}'{mapped_message}"
             else:
                 message = f"Add field '{field_payload['name']}' to '{target_item_type.name}'{mapped_message}"
             changes.append(Change(
@@ -1148,6 +1241,8 @@ class ConfigurationService:
             field_payload = self._field_change_payload(config_field, desired_picklist_names, target_picklists) | {
                 "itemTypeName": item_type.name,
             }
+            if self._is_auto_created_new_item_type_field(config_field, field_payload):
+                continue
             if self._request_field_type(config_field.fieldType) is None:
                 changes.append(Change(
                     "field_notice",
@@ -1159,9 +1254,17 @@ class ConfigurationService:
             changes.append(Change(
                 "instance_field",
                 f"instance-field-new:{item_type.name}:{config_field.name}",
-                f"Would you like to add '{field_payload['name']}' with '{config_field.fieldType}' to '{item_type.name}' in Project Configuration?",
+                f"Add field '{field_payload['name']}' with '{config_field.fieldType}' to '{item_type.name}'",
                 field_payload,
             ))
+
+    @staticmethod
+    def _is_auto_created_new_item_type_field(field: FieldConfiguration, field_payload: dict[str, Any]) -> bool:
+        field_name = str(field_payload.get("name") or field.name or "").strip().casefold()
+        if field_name in AUTO_CREATED_NEW_ITEM_TYPE_FIELD_NAMES:
+            return True
+        label = str(field_payload.get("label") or field.label or field.name or "")
+        return ConfigurationService._normalized_label(label) in AUTO_CREATED_NEW_ITEM_TYPE_FIELD_LABELS
 
     @staticmethod
     def _recoverable_field_apply_notice(change: Change, exc: Exception) -> str | None:

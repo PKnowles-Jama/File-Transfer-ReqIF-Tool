@@ -55,6 +55,8 @@ class _ApplyClientStub:
 
     def request(self, path, method="GET", query=None, data=None):
         self.calls.append((method, path, data))
+        if method == "GET" and path.startswith("itemtypes/") and "/" not in path[len("itemtypes/"):]:
+            return {"id": int(path.split("/", 1)[1]), "fields": []}
         if method == "POST" and path == "picklists":
             return {"meta": {"id": 999}}
         if method == "POST" and path == "picklists/999/options":
@@ -70,19 +72,19 @@ class _ApplyClientStub:
 
 
 class _NewItemTypeApplyClientStub:
-    def __init__(self):
+    def __init__(self, existing_fields=None):
         self.calls = []
+        self.existing_fields = existing_fields or []
 
     def request(self, path, method="GET", query=None, data=None):
         self.calls.append((method, path, data))
+        if method == "GET" and path == "itemtypes/889":
+            return {"id": 889, "fields": self.existing_fields}
         if method == "POST" and path == "itemtypes":
             return {"meta": {"id": 889}}
         if method == "POST" and path == "itemtypes/889/fields":
             return {"id": 778}
         raise AssertionError(f"Unexpected request: {method} {path}")
-
-    def paged(self, path, query=None):
-        return []
 
     def paged(self, path, query=None):
         return []
@@ -100,6 +102,8 @@ class _TypeKeyCollisionClientStub:
 
     def request(self, path, method="GET", query=None, data=None):
         self.calls.append((method, path, data))
+        if method == "GET" and path.startswith("itemtypes/") and "/" not in path[len("itemtypes/"):]:
+            return {"id": int(path.split("/", 1)[1]), "fields": []}
         if method == "POST" and path == "itemtypes":
             key = data.get("typeKey")
             if key == "SUB" and not self._attempted_sub:
@@ -160,7 +164,29 @@ class ConfigurationServiceTests(unittest.TestCase):
         self.assertEqual(["item_type", "instance_field"], [row.kind for row in changes])
         self.assertEqual([], changes[0].payload["fields"])
         self.assertEqual("System Requirement", changes[1].payload["itemTypeName"])
-        self.assertEqual("Would you like to add 'priority' with 'STRING' to 'System Requirement' in Project Configuration?", changes[1].message)
+        self.assertEqual("Add field 'priority' with 'STRING' to 'System Requirement'", changes[1].message)
+
+    def test_missing_project_item_type_does_not_propose_auto_created_default_fields(self):
+        desired = self.config([
+            ItemTypeConfiguration(
+                10,
+                "System Requirement",
+                [
+                    FieldConfiguration("documentKey", label="Project ID", fieldType="STRING"),
+                    FieldConfiguration("globalId", label="Global Id", fieldType="STRING"),
+                    FieldConfiguration("name", label="Name", fieldType="STRING"),
+                    FieldConfiguration("description", label="Description", fieldType="TEXT"),
+                    FieldConfiguration("assigned", label="Assigned", fieldType="USER"),
+                    FieldConfiguration("priority", label="Priority", fieldType="STRING"),
+                ],
+            )
+        ])
+
+        changes = self.service.compare(desired, self.config())
+
+        self.assertEqual(["item_type", "instance_field"], [row.kind for row in changes])
+        self.assertEqual("priority", changes[1].payload["name"])
+        self.assertEqual("Priority", changes[1].payload["label"])
 
     def test_missing_item_type_can_map_to_existing_project_item_type(self):
         desired = self.config([
@@ -213,6 +239,35 @@ class ConfigurationServiceTests(unittest.TestCase):
         self.assertIsNone(item_type.associatedItemTypeId)
         self.assertIsNone(item_type.associatedItemTypeName)
 
+    def test_copy_configuration_returns_deep_copy(self):
+        desired = self.config(
+            [ItemTypeConfiguration(10, "Requirement", [FieldConfiguration("priority", picklistName="Priority")])],
+            [PicklistConfiguration(20, "Priority", [PicklistOptionConfiguration(21, "High")])],
+        )
+        copied = self.service.copy_configuration(desired)
+        copied.itemTypes[0].fields[0].name = "urgency"
+        copied.picklists[0].options[0].name = "Medium"
+        self.assertEqual("priority", desired.itemTypes[0].fields[0].name)
+        self.assertEqual("High", desired.picklists[0].options[0].name)
+
+    def test_invalidate_instance_metadata_cache_clears_picklist_and_item_type_caches(self):
+        self.service._instance_item_types_cache = {"requirement": ItemTypeConfiguration(10, "Requirement", [])}
+        self.service._instance_picklists_cache = {"priority": PicklistConfiguration(20, "Priority", [])}
+
+        self.service.invalidate_instance_metadata_cache()
+
+        self.assertIsNone(self.service._instance_item_types_cache)
+        self.assertIsNone(self.service._instance_picklists_cache)
+
+    def test_apply_picklist_mapping_updates_picklist_and_field_references(self):
+        desired = self.config(
+            [ItemTypeConfiguration(10, "Requirement", [FieldConfiguration("priority", fieldType="LOOKUP", picklist=20)])],
+            [PicklistConfiguration(20, "Priority", [PicklistOptionConfiguration(21, "High")])],
+        )
+        self.service.apply_picklist_mapping(desired, "Priority", "Risk Priority")
+        self.assertEqual("Risk Priority", desired.picklists[0].name)
+        self.assertEqual("Risk Priority", desired.itemTypes[0].fields[0].picklistName)
+
     def test_export_selected_configuration_only_keeps_yes_changes(self):
         desired = JamaConfiguration(
             source={"projectKey": "SRC"},
@@ -238,11 +293,27 @@ class ConfigurationServiceTests(unittest.TestCase):
         service = ConfigurationService(client=client)  # type: ignore[arg-type]
         changes = [
             Change("item_type", "type:System Requirement", "Create item type", {"name": "System Requirement", "typeKey": "SYSREQ", "fields": []}),
-            Change("instance_field", "instance-field-new:System Requirement:priority", "Would you like to add 'priority' with 'STRING' to 'System Requirement' in Project Configuration?", {"name": "priority", "label": "Priority", "fieldType": "STRING", "itemTypeName": "System Requirement"}),
+            Change("instance_field", "instance-field-new:System Requirement:priority", "Add field 'priority' with 'STRING' to 'System Requirement'", {"name": "priority", "label": "Priority", "fieldType": "STRING", "itemTypeName": "System Requirement"}),
         ]
         outcomes = service.apply(102, changes)
-        self.assertEqual(["SUCCESS: Create item type", "SUCCESS: Would you like to add 'priority' with 'STRING' to 'System Requirement' in Project Configuration?"], outcomes)
-        self.assertEqual(["itemtypes", "itemtypes/889/fields"], [row[1] for row in client.calls])
+        self.assertEqual(["SUCCESS: Create item type", "SUCCESS: Add field 'priority' with 'STRING' to 'System Requirement'"], outcomes)
+        self.assertEqual(["itemtypes", "itemtypes/889", "itemtypes/889/fields"], [row[1] for row in client.calls])
+
+    def test_apply_new_item_type_skips_fields_jama_already_created(self):
+        client = _NewItemTypeApplyClientStub(existing_fields=[{"name": "name", "fieldType": "STRING", "label": "Name"}])
+        service = ConfigurationService(client=client)  # type: ignore[arg-type]
+        changes = [
+            Change("item_type", "type:System Requirement", "Create item type", {"name": "System Requirement", "typeKey": "SYSREQ", "fields": []}),
+            Change("instance_field", "instance-field-new:System Requirement:name", "Add field 'name' with 'STRING' to 'System Requirement'", {"name": "name", "label": "Name", "fieldType": "STRING", "itemTypeName": "System Requirement"}),
+            Change("instance_field", "instance-field-new:System Requirement:priority", "Add field 'priority' with 'STRING' to 'System Requirement'", {"name": "priority", "label": "Priority", "fieldType": "STRING", "itemTypeName": "System Requirement"}),
+        ]
+        outcomes = service.apply(102, changes)
+        self.assertEqual([
+            "SUCCESS: Create item type",
+            "NOTICE: Add field 'name' with 'STRING' to 'System Requirement'",
+            "SUCCESS: Add field 'priority' with 'STRING' to 'System Requirement'",
+        ], outcomes)
+        self.assertNotIn(("POST", "itemtypes/889/fields", {"name": "name", "label": "Name", "fieldType": "STRING"}), client.calls)
 
     def test_missing_project_picklist_includes_option_changes_for_new_picklist(self):
         desired = self.config(picklists=[PicklistConfiguration(20, "Priority", [PicklistOptionConfiguration(21, "High"), PicklistOptionConfiguration(22, "Medium")])])
@@ -261,7 +332,7 @@ class ConfigurationServiceTests(unittest.TestCase):
         desired = self.config(picklists=[PicklistConfiguration(20, "Priority", [PicklistOptionConfiguration(21, "High"), PicklistOptionConfiguration(22, "Medium")])])
         changes = service.compare(desired, self.config())
         self.assertEqual(["instance_picklist_notice", "instance_picklist_option"], [row.kind for row in changes])
-        self.assertIn("Would you like to add 'Medium' to 'Priority' in Project Configuration?", changes[1].message)
+        self.assertIn("Add option 'Medium' to existing Jama Connect picklist 'Priority'", changes[1].message)
 
     def test_apply_picklist_uses_meta_id_for_option_creation(self):
         client = _ApplyClientStub()
@@ -321,6 +392,8 @@ class ConfigurationServiceTests(unittest.TestCase):
         class _RetryClient(_TypeKeyCollisionClientStub):
             def request(self, path, method="GET", query=None, data=None):
                 self.calls.append((method, path, data))
+                if method == "GET" and path.startswith("itemtypes/") and "/" not in path[len("itemtypes/"):]:
+                    return {"id": int(path.split("/", 1)[1]), "fields": []}
                 if method == "POST" and path == "itemtypes":
                     key = data.get("typeKey")
                     if key == "SUB1":

@@ -15,4 +15,5 @@ src/ftr_tool/logging_setup.py
 src/ftr_tool/main.py
 src/ftr_tool/service.py
 tests/test_configuration.py
+tests/test_gui.py
 tests/test_service.py

@@ -1,0 +1,492 @@
+2026-09-22 13:43:10,484 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/projects
+2026-09-22 13:43:10,812 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/projects
+2026-09-22 13:43:48,597 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:43:50,024 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:43:51,575 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:43:52,824 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:43:54,095 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:43:55,356 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:43:57,041 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:43:58,405 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:00,105 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:01,575 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:02,778 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:04,081 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:05,836 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:07,435 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:08,837 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:44:09,365 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/27
+2026-09-22 13:44:09,555 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/28
+2026-09-22 13:44:09,764 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/30
+2026-09-22 13:44:09,991 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/31
+2026-09-22 13:44:10,193 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/32
+2026-09-22 13:44:10,371 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/33
+2026-09-22 13:44:10,573 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/58
+2026-09-22 13:44:10,757 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/67
+2026-09-22 13:44:10,927 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/88
+2026-09-22 13:44:11,144 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/89
+2026-09-22 13:44:11,375 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/112
+2026-09-22 13:44:11,578 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/113
+2026-09-22 13:44:11,779 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/118
+2026-09-22 13:44:11,997 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/127
+2026-09-22 13:44:12,221 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/132
+2026-09-22 13:44:12,398 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/137
+2026-09-22 13:44:12,589 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:44:12,819 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/253/options
+2026-09-22 13:44:13,046 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/252/options
+2026-09-22 13:44:13,239 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/267/options
+2026-09-22 13:44:13,445 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/291/options
+2026-09-22 13:44:13,690 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/228/options
+2026-09-22 13:44:13,865 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/271/options
+2026-09-22 13:44:14,074 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/290/options
+2026-09-22 13:44:14,317 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/289/options
+2026-09-22 13:44:14,519 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/266/options
+2026-09-22 13:44:14,713 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/62/options
+2026-09-22 13:44:14,893 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/167/options
+2026-09-22 13:44:15,060 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/240/options
+2026-09-22 13:44:15,238 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/292/options
+2026-09-22 13:44:15,457 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/247/options
+2026-09-22 13:44:15,661 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/63/options
+2026-09-22 13:44:15,845 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/288/options
+2026-09-22 13:44:16,063 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/235/options
+2026-09-22 13:44:16,257 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/225/options
+2026-09-22 13:44:16,462 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/projects/60/relationshipruleset
+2026-09-22 13:44:16,653 ERROR GET https://defense-dataset-source.jamacloud.com/rest/v1/projects/60/relationshipruleset failed (404): This resource does not exist
+2026-09-22 13:44:16,653 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-22 13:44:17,042 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/relationshiprulesets/12/relationships
+2026-09-22 13:44:17,208 ERROR GET https://defense-dataset-source.jamacloud.com/rest/v1/relationshiprulesets/12/relationships failed (404): This resource does not exist
+2026-09-22 13:44:17,209 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-22 13:44:17,210 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/users
+2026-09-22 13:44:17,502 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:44:17,717 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/279/options
+2026-09-22 13:44:18,021 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/287/options
+2026-09-22 13:44:18,205 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/280/options
+2026-09-22 13:44:18,425 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/281/options
+2026-09-22 13:44:18,632 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/282/options
+2026-09-22 13:44:18,882 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/283/options
+2026-09-22 13:44:19,081 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/284/options
+2026-09-22 13:44:19,287 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/285/options
+2026-09-22 13:44:19,472 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/286/options
+2026-09-22 13:44:19,668 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/278/options
+2026-09-22 13:44:19,893 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/269/options
+2026-09-22 13:44:20,112 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/253/options
+2026-09-22 13:44:20,315 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/251/options
+2026-09-22 13:44:20,538 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/252/options
+2026-09-22 13:44:20,735 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/267/options
+2026-09-22 13:44:20,957 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/272/options
+2026-09-22 13:44:21,145 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/227/options
+2026-09-22 13:44:21,349 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/226/options
+2026-09-22 13:44:21,553 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/291/options
+2026-09-22 13:44:21,744 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/228/options
+2026-09-22 13:44:21,940 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/277/options
+2026-09-22 13:44:22,126 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/271/options
+2026-09-22 13:44:22,312 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/239/options
+2026-09-22 13:44:22,526 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/290/options
+2026-09-22 13:44:22,717 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/289/options
+2026-09-22 13:44:22,922 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/266/options
+2026-09-22 13:44:23,117 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/270/options
+2026-09-22 13:44:23,329 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/62/options
+2026-09-22 13:44:23,581 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/167/options
+2026-09-22 13:44:23,806 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/33/options
+2026-09-22 13:44:24,009 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/31/options
+2026-09-22 13:44:24,224 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/85/options
+2026-09-22 13:44:24,438 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/34/options
+2026-09-22 13:44:24,644 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/240/options
+2026-09-22 13:44:24,860 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/276/options
+2026-09-22 13:44:25,087 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/169/options
+2026-09-22 13:44:25,270 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/241/options
+2026-09-22 13:44:25,500 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/292/options
+2026-09-22 13:44:25,701 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/247/options
+2026-09-22 13:44:25,934 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/275/options
+2026-09-22 13:44:26,141 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/273/options
+2026-09-22 13:44:26,361 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/274/options
+2026-09-22 13:44:26,578 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/63/options
+2026-09-22 13:44:26,757 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/288/options
+2026-09-22 13:44:26,952 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/94/options
+2026-09-22 13:44:27,184 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/268/options
+2026-09-22 13:44:27,417 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/235/options
+2026-09-22 13:44:27,622 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/225/options
+2026-09-22 13:44:27,844 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:44:28,193 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:44:28,382 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/22
+2026-09-22 13:44:28,599 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/27
+2026-09-22 13:44:28,803 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/28
+2026-09-22 13:44:28,991 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/29
+2026-09-22 13:44:29,215 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/30
+2026-09-22 13:44:29,453 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/31
+2026-09-22 13:44:29,643 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/32
+2026-09-22 13:44:29,905 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/33
+2026-09-22 13:44:30,135 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/34
+2026-09-22 13:44:30,391 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/35
+2026-09-22 13:44:30,590 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/36
+2026-09-22 13:44:30,803 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/37
+2026-09-22 13:44:31,014 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/40
+2026-09-22 13:44:31,202 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/45
+2026-09-22 13:44:31,431 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/58
+2026-09-22 13:44:31,661 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/67
+2026-09-22 13:44:31,909 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/68
+2026-09-22 13:44:32,130 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/88
+2026-09-22 13:44:32,341 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/89
+2026-09-22 13:44:32,573 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/95
+2026-09-22 13:44:32,792 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/98
+2026-09-22 13:44:33,006 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/107
+2026-09-22 13:44:33,236 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/108
+2026-09-22 13:44:33,407 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/112
+2026-09-22 13:44:33,611 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/113
+2026-09-22 13:44:33,800 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/118
+2026-09-22 13:44:33,982 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/119
+2026-09-22 13:44:34,163 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/120
+2026-09-22 13:44:34,364 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/121
+2026-09-22 13:44:34,573 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/122
+2026-09-22 13:44:34,753 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/123
+2026-09-22 13:44:34,962 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/124
+2026-09-22 13:44:35,198 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/125
+2026-09-22 13:44:35,401 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/127
+2026-09-22 13:44:35,660 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/132
+2026-09-22 13:44:35,909 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/133
+2026-09-22 13:44:36,103 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/134
+2026-09-22 13:44:36,361 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/135
+2026-09-22 13:44:36,565 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/136
+2026-09-22 13:44:36,778 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/137
+2026-09-22 13:44:36,972 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/138
+2026-09-22 13:44:37,171 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/139
+2026-09-22 13:44:37,380 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/140
+2026-09-22 13:44:37,602 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/141
+2026-09-22 13:44:37,779 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/142
+2026-09-22 13:44:37,983 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/143
+2026-09-22 13:44:38,273 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/144
+2026-09-22 13:44:38,514 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/145
+2026-09-22 13:44:38,692 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/146
+2026-09-22 13:44:38,847 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/147
+2026-09-22 13:44:39,077 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/148
+2026-09-22 13:46:03,056 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:46:03,483 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:46:03,675 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:46:04,067 INFO Applied: Create picklist ‘MS Compliance Status’
+2026-09-22 13:46:04,069 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:46:04,476 INFO Applied: Create picklist ‘MS Rqmt State’
+2026-09-22 13:46:04,478 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:46:04,828 INFO Applied: Create picklist ‘Team’
+2026-09-22 13:46:04,830 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/235/options
+2026-09-22 13:46:05,173 INFO Applied: Add option ‘N/A’ to ‘Verification/Validation Method’
+2026-09-22 13:46:05,186 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/293/options
+2026-09-22 13:46:05,557 INFO Applied: Add option ‘Compliant’ to ‘MS Compliance Status’
+2026-09-22 13:46:05,563 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/293/options
+2026-09-22 13:46:05,971 INFO Applied: Add option ‘Partially Compliant’ to ‘MS Compliance Status’
+2026-09-22 13:46:05,975 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/293/options
+2026-09-22 13:46:06,377 INFO Applied: Add option ‘Non-Compliant’ to ‘MS Compliance Status’
+2026-09-22 13:46:06,378 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/293/options
+2026-09-22 13:46:06,790 INFO Applied: Add option ‘Waived’ to ‘MS Compliance Status’
+2026-09-22 13:46:06,792 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/293/options
+2026-09-22 13:46:07,195 INFO Applied: Add option ‘Deviation Approved’ to ‘MS Compliance Status’
+2026-09-22 13:46:07,196 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/294/options
+2026-09-22 13:46:07,623 INFO Applied: Add option ‘Draft’ to ‘MS Rqmt State’
+2026-09-22 13:46:07,627 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/294/options
+2026-09-22 13:46:08,021 INFO Applied: Add option ‘In Work’ to ‘MS Rqmt State’
+2026-09-22 13:46:08,024 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/294/options
+2026-09-22 13:46:08,437 INFO Applied: Add option ‘Approved’ to ‘MS Rqmt State’
+2026-09-22 13:46:08,443 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/294/options
+2026-09-22 13:46:08,819 INFO Applied: Add option ‘Verified’ to ‘MS Rqmt State’
+2026-09-22 13:46:08,822 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:09,229 INFO Applied: Add option ‘Navigation’ to ‘Team’
+2026-09-22 13:46:09,231 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:09,610 INFO Applied: Add option ‘Guidance’ to ‘Team’
+2026-09-22 13:46:09,613 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:09,972 INFO Applied: Add option ‘Embedded Software’ to ‘Team’
+2026-09-22 13:46:09,976 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:10,350 INFO Applied: Add option ‘Firmware’ to ‘Team’
+2026-09-22 13:46:10,353 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:10,724 INFO Applied: Add option ‘Flight Sciences’ to ‘Team’
+2026-09-22 13:46:10,726 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:11,105 INFO Applied: Add option ‘Avionics’ to ‘Team’
+2026-09-22 13:46:11,108 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:11,473 INFO Applied: Add option ‘Systems Engineering’ to ‘Team’
+2026-09-22 13:46:11,478 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:11,833 INFO Applied: Add option ‘Mechanical’ to ‘Team’
+2026-09-22 13:46:11,835 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:12,211 INFO Applied: Add option ‘Systems Test’ to ‘Team’
+2026-09-22 13:46:12,213 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:12,565 INFO Applied: Add option ‘Propulsion’ to ‘Team’
+2026-09-22 13:46:12,566 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:12,937 INFO Applied: Add option ‘Program Management’ to ‘Team’
+2026-09-22 13:46:12,939 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:13,316 INFO Applied: Add option ‘Support Equipment/Logistics’ to ‘Team’
+2026-09-22 13:46:13,350 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:14,147 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:14,947 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:16,015 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:17,067 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:18,228 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:19,325 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:20,426 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:21,554 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:22,655 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:23,686 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:24,678 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:25,623 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:26,820 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:27,925 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/abstractitems
+2026-09-22 13:46:28,528 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/27
+2026-09-22 13:46:28,740 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/28
+2026-09-22 13:46:28,946 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/30
+2026-09-22 13:46:29,136 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/31
+2026-09-22 13:46:29,336 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/32
+2026-09-22 13:46:29,535 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/33
+2026-09-22 13:46:29,726 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/58
+2026-09-22 13:46:29,952 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/67
+2026-09-22 13:46:30,204 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/88
+2026-09-22 13:46:30,429 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/89
+2026-09-22 13:46:30,621 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/112
+2026-09-22 13:46:30,881 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/113
+2026-09-22 13:46:31,088 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/118
+2026-09-22 13:46:31,299 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/127
+2026-09-22 13:46:31,486 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/132
+2026-09-22 13:46:31,749 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/137
+2026-09-22 13:46:31,943 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:46:32,144 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:46:32,322 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/253/options
+2026-09-22 13:46:32,580 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/252/options
+2026-09-22 13:46:32,815 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/267/options
+2026-09-22 13:46:33,014 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/291/options
+2026-09-22 13:46:33,231 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/228/options
+2026-09-22 13:46:33,405 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/271/options
+2026-09-22 13:46:33,617 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/290/options
+2026-09-22 13:46:33,859 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/289/options
+2026-09-22 13:46:34,091 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/266/options
+2026-09-22 13:46:34,327 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/62/options
+2026-09-22 13:46:34,534 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/167/options
+2026-09-22 13:46:34,775 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/240/options
+2026-09-22 13:46:34,992 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/292/options
+2026-09-22 13:46:35,202 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/247/options
+2026-09-22 13:46:35,409 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/63/options
+2026-09-22 13:46:35,592 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/288/options
+2026-09-22 13:46:35,840 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/235/options
+2026-09-22 13:46:36,071 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/225/options
+2026-09-22 13:46:36,290 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/projects/60/relationshipruleset
+2026-09-22 13:46:36,476 ERROR GET https://defense-dataset-source.jamacloud.com/rest/v1/projects/60/relationshipruleset failed (404): This resource does not exist
+2026-09-22 13:46:36,477 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/relationshiprulesets
+2026-09-22 13:46:36,808 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/relationshiprulesets/12/relationships
+2026-09-22 13:46:36,986 ERROR GET https://defense-dataset-source.jamacloud.com/rest/v1/relationshiprulesets/12/relationships failed (404): This resource does not exist
+2026-09-22 13:46:36,986 WARNING Relationship rule set unavailable: Jama returned HTTP 404: This resource does not exist
+2026-09-22 13:46:36,988 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/users
+2026-09-22 13:46:37,275 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:46:37,537 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists
+2026-09-22 13:46:37,749 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/279/options
+2026-09-22 13:46:37,958 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/287/options
+2026-09-22 13:46:38,130 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/280/options
+2026-09-22 13:46:38,329 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/281/options
+2026-09-22 13:46:38,543 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/282/options
+2026-09-22 13:46:38,783 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/283/options
+2026-09-22 13:46:38,952 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/284/options
+2026-09-22 13:46:39,165 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/285/options
+2026-09-22 13:46:39,355 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/286/options
+2026-09-22 13:46:39,570 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/278/options
+2026-09-22 13:46:39,738 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/269/options
+2026-09-22 13:46:39,970 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/253/options
+2026-09-22 13:46:40,204 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/251/options
+2026-09-22 13:46:40,422 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/252/options
+2026-09-22 13:46:40,649 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/267/options
+2026-09-22 13:46:40,844 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/272/options
+2026-09-22 13:46:41,047 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/227/options
+2026-09-22 13:46:41,269 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/226/options
+2026-09-22 13:46:41,511 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/291/options
+2026-09-22 13:46:41,741 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/228/options
+2026-09-22 13:46:41,937 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/277/options
+2026-09-22 13:46:42,133 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/271/options
+2026-09-22 13:46:42,348 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/293/options
+2026-09-22 13:46:42,617 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/294/options
+2026-09-22 13:46:42,828 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/239/options
+2026-09-22 13:46:42,996 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/290/options
+2026-09-22 13:46:43,170 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/289/options
+2026-09-22 13:46:43,424 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/266/options
+2026-09-22 13:46:43,675 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/270/options
+2026-09-22 13:46:43,888 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/62/options
+2026-09-22 13:46:44,105 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/167/options
+2026-09-22 13:46:44,296 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/33/options
+2026-09-22 13:46:44,484 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/31/options
+2026-09-22 13:46:44,672 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/85/options
+2026-09-22 13:46:44,910 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/34/options
+2026-09-22 13:46:45,145 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/240/options
+2026-09-22 13:46:45,354 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/276/options
+2026-09-22 13:46:45,581 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/169/options
+2026-09-22 13:46:45,795 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/241/options
+2026-09-22 13:46:46,011 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/292/options
+2026-09-22 13:46:46,225 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/247/options
+2026-09-22 13:46:46,419 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/275/options
+2026-09-22 13:46:46,637 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/273/options
+2026-09-22 13:46:46,867 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/274/options
+2026-09-22 13:46:47,080 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/63/options
+2026-09-22 13:46:47,261 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/288/options
+2026-09-22 13:46:47,475 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/94/options
+2026-09-22 13:46:47,704 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/268/options
+2026-09-22 13:46:47,949 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/235/options
+2026-09-22 13:46:48,169 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/225/options
+2026-09-22 13:46:48,395 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/picklists/295/options
+2026-09-22 13:46:48,592 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:46:48,970 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:46:49,195 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/22
+2026-09-22 13:46:49,406 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/27
+2026-09-22 13:46:49,632 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/28
+2026-09-22 13:46:49,849 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/29
+2026-09-22 13:46:50,026 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/30
+2026-09-22 13:46:50,232 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/31
+2026-09-22 13:46:50,428 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/32
+2026-09-22 13:46:50,634 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/33
+2026-09-22 13:46:50,856 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/34
+2026-09-22 13:46:51,052 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/35
+2026-09-22 13:46:51,271 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/36
+2026-09-22 13:46:51,438 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/37
+2026-09-22 13:46:51,621 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/40
+2026-09-22 13:46:51,775 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/45
+2026-09-22 13:46:51,946 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/58
+2026-09-22 13:46:52,159 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/67
+2026-09-22 13:46:52,400 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/68
+2026-09-22 13:46:52,593 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/88
+2026-09-22 13:46:52,844 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/89
+2026-09-22 13:46:53,029 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/95
+2026-09-22 13:46:53,255 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/98
+2026-09-22 13:46:53,454 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/107
+2026-09-22 13:46:53,674 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/108
+2026-09-22 13:46:53,887 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/112
+2026-09-22 13:46:54,091 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/113
+2026-09-22 13:46:54,265 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/118
+2026-09-22 13:46:54,449 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/119
+2026-09-22 13:46:54,645 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/120
+2026-09-22 13:46:54,841 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/121
+2026-09-22 13:46:55,052 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/122
+2026-09-22 13:46:55,239 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/123
+2026-09-22 13:46:55,407 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/124
+2026-09-22 13:46:55,580 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/125
+2026-09-22 13:46:55,791 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/127
+2026-09-22 13:46:55,978 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/132
+2026-09-22 13:46:56,196 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/133
+2026-09-22 13:46:56,414 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/134
+2026-09-22 13:46:56,649 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/135
+2026-09-22 13:46:56,845 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/136
+2026-09-22 13:46:57,056 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/137
+2026-09-22 13:46:57,249 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/138
+2026-09-22 13:46:57,495 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/139
+2026-09-22 13:46:57,720 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/140
+2026-09-22 13:46:57,946 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/141
+2026-09-22 13:46:58,145 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/142
+2026-09-22 13:46:58,350 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/143
+2026-09-22 13:46:58,607 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/144
+2026-09-22 13:46:58,812 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/145
+2026-09-22 13:46:59,020 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/146
+2026-09-22 13:46:59,224 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/147
+2026-09-22 13:46:59,393 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/148
+2026-09-22 13:51:08,079 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:08,491 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:08,713 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:09,501 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/149
+2026-09-22 13:51:09,699 INFO Applied: Create item type ‘MS L0 Requirement’ with its fields
+2026-09-22 13:51:09,702 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:10,493 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/150
+2026-09-22 13:51:10,731 INFO Applied: Create item type ‘MS Weapon System Requirement’ with its fields
+2026-09-22 13:51:10,734 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:11,639 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/151
+2026-09-22 13:51:11,837 INFO Applied: Create item type ‘MS Technical Performance Measure’ with its fields
+2026-09-22 13:51:11,840 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:12,458 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/152
+2026-09-22 13:51:12,690 INFO Applied: Create item type ‘MS System Requirement’ with its fields
+2026-09-22 13:51:12,693 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:13,487 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/153
+2026-09-22 13:51:13,705 INFO Applied: Create item type ‘MS Subsystem Requirement’ with its fields
+2026-09-22 13:51:13,710 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-22 13:51:14,123 INFO Applied: Add field 'verification_method' with 'LOOKUP' to 'MS Weapon System Requirement'
+2026-09-22 13:51:14,124 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-22 13:51:14,471 INFO Applied: Add field 'requirement_state' with 'LOOKUP' to 'MS Weapon System Requirement'
+2026-09-22 13:51:14,472 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-22 13:51:14,815 INFO Applied: Add field 'perf_team' with 'LOOKUP' to 'MS Weapon System Requirement'
+2026-09-22 13:51:14,816 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/150/fields
+2026-09-22 13:51:15,229 INFO Applied: Add field 'compliance_status' with 'LOOKUP' to 'MS Weapon System Requirement'
+2026-09-22 13:51:15,232 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-22 13:51:15,675 INFO Applied: Add field 'design_value' with 'STRING' to 'MS Technical Performance Measure'
+2026-09-22 13:51:15,680 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-22 13:51:16,093 INFO Applied: Add field 'objective_value' with 'STRING' to 'MS Technical Performance Measure'
+2026-09-22 13:51:16,096 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-22 13:51:16,453 INFO Applied: Add field 'threshold_value' with 'STRING' to 'MS Technical Performance Measure'
+2026-09-22 13:51:16,454 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/151/fields
+2026-09-22 13:51:16,896 INFO Applied: Add field 'compliance_status' with 'LOOKUP' to 'MS Technical Performance Measure'
+2026-09-22 13:51:16,897 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-22 13:51:17,252 INFO Applied: Add field 'primary_verification_method' with 'LOOKUP' to 'MS System Requirement'
+2026-09-22 13:51:17,254 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-22 13:51:17,687 INFO Applied: Add field 'secondary_verification_method' with 'LOOKUP' to 'MS System Requirement'
+2026-09-22 13:51:17,689 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-22 13:51:18,048 INFO Applied: Add field 'requirement_state' with 'LOOKUP' to 'MS System Requirement'
+2026-09-22 13:51:18,049 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/152/fields
+2026-09-22 13:51:18,387 INFO Applied: Add field 'compliance_status' with 'LOOKUP' to 'MS System Requirement'
+2026-09-22 13:51:18,392 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/125/fields
+2026-09-22 13:51:18,798 INFO Applied: Add field 'performance_team' with 'LOOKUP' to existing Jama Connect item type 'Risk' (mapped from 'MS Risk')
+2026-09-22 13:51:18,800 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-22 13:51:19,171 INFO Applied: Add field 'primary_verification_method' with 'LOOKUP' to 'MS Subsystem Requirement'
+2026-09-22 13:51:19,174 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-22 13:51:19,576 INFO Applied: Add field 'secondary_verification_method' with 'LOOKUP' to 'MS Subsystem Requirement'
+2026-09-22 13:51:19,580 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-22 13:51:19,956 INFO Applied: Add field 'requirement_state' with 'LOOKUP' to 'MS Subsystem Requirement'
+2026-09-22 13:51:19,958 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/153/fields
+2026-09-22 13:51:20,352 INFO Applied: Add field 'compliane_status' with 'LOOKUP' to 'MS Subsystem Requirement'
+2026-09-22 13:51:20,355 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/29/fields
+2026-09-22 13:51:20,735 INFO Applied: Add field 'performance_team' with 'LOOKUP' to existing Jama Connect item type 'User Story' (mapped from 'MS User Story')
+2026-09-22 13:51:20,737 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/27/fields
+2026-09-22 13:51:21,058 INFO Applied: Add field 'team' to 'Defect' (mapped from 'MS Defect')
+2026-09-22 13:51:21,063 INFO POST https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/28/fields
+2026-09-22 13:51:21,436 INFO Applied: Add field 'performance_team' to 'Change Request - Defense' (mapped from 'MS Change Request')
+2026-09-22 13:51:21,481 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:21,917 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes
+2026-09-22 13:51:22,147 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/22
+2026-09-22 13:51:22,387 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/27
+2026-09-22 13:51:22,593 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/28
+2026-09-22 13:51:22,799 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/29
+2026-09-22 13:51:23,035 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/30
+2026-09-22 13:51:23,243 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/31
+2026-09-22 13:51:23,440 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/32
+2026-09-22 13:51:23,653 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/33
+2026-09-22 13:51:23,828 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/34
+2026-09-22 13:51:24,036 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/35
+2026-09-22 13:51:24,233 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/36
+2026-09-22 13:51:24,466 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/37
+2026-09-22 13:51:24,676 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/40
+2026-09-22 13:51:24,860 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/45
+2026-09-22 13:51:25,080 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/58
+2026-09-22 13:51:25,294 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/67
+2026-09-22 13:51:25,505 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/68
+2026-09-22 13:51:25,736 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/88
+2026-09-22 13:51:25,947 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/89
+2026-09-22 13:51:26,145 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/95
+2026-09-22 13:51:26,362 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/98
+2026-09-22 13:51:26,564 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/107
+2026-09-22 13:51:26,759 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/108
+2026-09-22 13:51:26,960 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/112
+2026-09-22 13:51:27,162 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/113
+2026-09-22 13:51:27,369 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/118
+2026-09-22 13:51:27,594 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/119
+2026-09-22 13:51:27,774 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/120
+2026-09-22 13:51:27,981 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/121
+2026-09-22 13:51:28,171 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/122
+2026-09-22 13:51:28,362 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/123
+2026-09-22 13:51:28,524 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/124
+2026-09-22 13:51:28,730 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/125
+2026-09-22 13:51:28,986 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/127
+2026-09-22 13:51:29,202 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/132
+2026-09-22 13:51:29,462 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/133
+2026-09-22 13:51:29,619 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/134
+2026-09-22 13:51:29,827 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/135
+2026-09-22 13:51:30,024 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/136
+2026-09-22 13:51:30,222 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/137
+2026-09-22 13:51:30,383 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/138
+2026-09-22 13:51:30,560 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/139
+2026-09-22 13:51:30,754 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/140
+2026-09-22 13:51:30,952 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/141
+2026-09-22 13:51:31,255 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/142
+2026-09-22 13:51:31,456 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/143
+2026-09-22 13:51:31,700 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/144
+2026-09-22 13:51:31,874 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/145
+2026-09-22 13:51:32,048 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/146
+2026-09-22 13:51:32,251 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/147
+2026-09-22 13:51:32,515 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/148
+2026-09-22 13:51:32,682 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/149
+2026-09-22 13:51:32,883 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/150
+2026-09-22 13:51:33,099 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/151
+2026-09-22 13:51:33,270 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/152
+2026-09-22 13:51:33,501 INFO GET https://defense-dataset-source.jamacloud.com/rest/v1/itemtypes/153

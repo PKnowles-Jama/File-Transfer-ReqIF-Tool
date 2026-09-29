@@ -1,0 +1,19 @@
+Configuration Follow-Up
+Generated: 2026-09-22 13:51:33
+Import file: IMS-configuration-20260916-142753.json
+
+1. Item Types identified for follow-up configuration
+- Test Plan (API ID 35)
+- Test Cycle (API ID 36)
+- Test Run (API ID 37)
+- MS L0 Requirement (API ID 149)
+- MS Weapon System Requirement (API ID 150)
+- MS Technical Performance Measure (API ID 151)
+- MS System Requirement (API ID 152)
+- Risk (API ID 125)
+- MS Subsystem Requirement (API ID 153)
+- User Story (API ID 29)
+- Architecture Block (API ID 145)
+
+2. Item Types not configured / warning
+- None
